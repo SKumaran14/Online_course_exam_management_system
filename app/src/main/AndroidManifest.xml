@@ -10,7 +10,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CourseExamApp">
-
         <activity
             android:name=".your_courses"
             android:exported="true" />

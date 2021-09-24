@@ -145,9 +145,12 @@
     <string name="textView_submit2"> You successfully submitted the assignment!!!!!! </string>
     <string name="assignment_id">Assignment id :</string>
     <string name="editText_id">enter id</string>
-    <string name="textView_name">Name : </string>
-    <string name="editText_name">Name</string>
     <string name="editText_status"> Task </string>
+    <string name="textView_name">Name : </string>
+    <string name="editText_name"> viji.pdf </string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_update">update</string>
 
     <!--    Kajansika String Resources-->
     <!--    /search_course, not found-->
