@@ -1,5 +1,6 @@
 package com.example.courseexamapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
@@ -11,12 +12,15 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 //actual question page which returns questions on the same page
 public class CssExam extends AppCompatActivity implements View.OnClickListener {
@@ -25,6 +29,7 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
     private TextView txtQu2,time2,remtime2;
     private ImageView img;
     private int index = 0;
+    private BottomNavigationView myBottomNavigation;
 
 
     //Question array for CSS Exam by checking option 1 correct or not
@@ -59,6 +64,8 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
         btnYes.setOnClickListener(this);
         time2 = findViewById(R.id.txt_time2);
         remtime2 = findViewById(R.id.txt_remtime);
+        myBottomNavigation = findViewById(R.id.bottomNavigationView);
+        bottomNavClick();
     }
     public void timer2(){
 //        int correctCount = 0;
@@ -262,6 +269,27 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
                 }
             }, 2000);
         }
+    }
+    //For Bottom Navigationbar Function
+    public void bottomNavClick(){
+        myBottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem){
+
+                switch (menuItem.getItemId()) {
+                    case R.id.courses:
+                        startActivity(new Intent(getApplicationContext(), your_courses.class));
+                        break;
+                    case R.id.menu:
+                        startActivity(new Intent(getApplicationContext(), Menu.class));
+                        break;
+                    case R.id.forum:
+                        startActivity(new Intent(getApplicationContext(), Forum_Main.class));
+                        break;
+                }
+                return true;
+            }
+        });
     }
 }
 

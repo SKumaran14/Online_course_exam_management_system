@@ -91,7 +91,7 @@
             android:name=".Signup"
             android:exported="true" />
         <activity
-            android:name=".Menu"
+            android:name=".Login"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
@@ -119,7 +119,7 @@
         <!-- </intent-filter> -->
         <!-- </activity> -->
         <activity
-            android:name=".Login"
+            android:name=".Menu"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,16 +1,21 @@
 package com.example.courseexamapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 public class course_content extends AppCompatActivity {
     private Button content_next;
     private ImageView back;
+    private BottomNavigationView myBottomNavigation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +23,8 @@ public class course_content extends AppCompatActivity {
         setContentView(R.layout.activity_course_content);
         content_next = findViewById(R.id.course_content_next);
         back = findViewById(R.id.go_back);
+        myBottomNavigation = findViewById(R.id.bottomNavigationView);
+        bottomNavClick();
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +39,27 @@ public class course_content extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(course_content.this, course_sub_parts.class);
                 startActivity(intent);
+            }
+        });
+    }
+    //For Bottom Navigationbar Function
+    public void bottomNavClick(){
+        myBottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem){
+
+                switch (menuItem.getItemId()) {
+                    case R.id.courses:
+                        startActivity(new Intent(getApplicationContext(), your_courses.class));
+                        break;
+                    case R.id.menu:
+                        startActivity(new Intent(getApplicationContext(), Menu.class));
+                        break;
+                    case R.id.forum:
+                        startActivity(new Intent(getApplicationContext(), Forum_Main.class));
+                        break;
+                }
+                return true;
             }
         });
     }

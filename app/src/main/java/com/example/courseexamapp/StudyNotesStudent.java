@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -18,6 +19,8 @@ import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import java.util.ArrayList;
 
 public class StudyNotesStudent extends AppCompatActivity {
@@ -25,6 +28,7 @@ public class StudyNotesStudent extends AppCompatActivity {
     private EditText editTextChapter;
     private EditText editTextNotes;
     String ID;
+    private BottomNavigationView myBottomNavigation;
 //    private DatabaseReference mDatabase;
 
 
@@ -40,6 +44,8 @@ public class StudyNotesStudent extends AppCompatActivity {
         editTextChapter = findViewById(R.id.Name);
         editTextNotes = findViewById(R.id.Notes);
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        myBottomNavigation = findViewById(R.id.bottomNavigationView);
+        bottomNavClick();
 
         buttonSave.setOnClickListener(v ->{
             String chapter = editTextChapter.getText().toString().trim();
@@ -195,6 +201,27 @@ public class StudyNotesStudent extends AppCompatActivity {
                 layout = itemView.findViewById(R.id.list_layout);
             }
         }
+    }
+    //For Bottom Navigationbar Function
+    public void bottomNavClick(){
+        myBottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem){
+
+                switch (menuItem.getItemId()) {
+                    case R.id.courses:
+                        startActivity(new Intent(getApplicationContext(), your_courses.class));
+                        break;
+                    case R.id.menu:
+                        startActivity(new Intent(getApplicationContext(), Menu.class));
+                        break;
+                    case R.id.forum:
+                        startActivity(new Intent(getApplicationContext(), Forum_Main.class));
+                        break;
+                }
+                return true;
+            }
+        });
     }
 }
 

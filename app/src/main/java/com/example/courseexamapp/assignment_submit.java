@@ -9,8 +9,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-    public class assignment_submit extends AppCompatActivity {
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+public class assignment_submit extends AppCompatActivity {
         private Button next;
+    private BottomNavigationView myBottomNavigation;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -21,6 +24,8 @@ import android.widget.Button;
             // showing the back button in action bar
             actionBar.setDisplayHomeAsUpEnabled(true);
             next = (Button)findViewById(R.id.btn_edit);
+            myBottomNavigation = findViewById(R.id.bottomNavigationView);
+            bottomNavClick();
 
             next.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -40,4 +45,27 @@ import android.widget.Button;
             }
             return super.onOptionsItemSelected(item);
         }
+    //For Bottom Navigationbar Function
+    public void bottomNavClick(){
+        myBottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem){
+
+                switch (menuItem.getItemId()) {
+                    case R.id.courses:
+                        startActivity(new Intent(getApplicationContext(), your_courses.class));
+                        break;
+                    case R.id.menu:
+                        startActivity(new Intent(getApplicationContext(), Menu.class));
+                        break;
+                    case R.id.forum:
+                        startActivity(new Intent(getApplicationContext(), Forum_Main.class));
+                        break;
+                }
+
+                return true;
+
+            }
+        });
+    }
     }

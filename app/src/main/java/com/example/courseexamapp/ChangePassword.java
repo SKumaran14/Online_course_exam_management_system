@@ -1,5 +1,6 @@
 package com.example.courseexamapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
@@ -8,14 +9,18 @@ import android.app.NotificationManager;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ChangePassword extends AppCompatActivity {
     private Button chng, cancel;
     private final String Ch_ID = "Code World";
     private final int Noti_ID = 1;
+    private BottomNavigationView myBottomNavigation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +29,8 @@ public class ChangePassword extends AppCompatActivity {
 
         chng = findViewById(R.id.btn_chgpass);
         cancel = findViewById(R.id.btn_cancel);
+        myBottomNavigation = findViewById(R.id.bottomNavigationView);
+        bottomNavClick();
         //Intents ok
 
         //when click change button goes to login page
@@ -71,5 +78,28 @@ public class ChangePassword extends AppCompatActivity {
                 notificationManager.createNotificationChannel(notificationChannel);
             }
         }
+    }
+    //For Bottom Navigationbar Function
+    public void bottomNavClick(){
+        myBottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem){
+
+                switch (menuItem.getItemId()) {
+                    case R.id.courses:
+                        startActivity(new Intent(getApplicationContext(), your_courses.class));
+                        break;
+                    case R.id.menu:
+                        startActivity(new Intent(getApplicationContext(), Menu.class));
+                        break;
+                    case R.id.forum:
+                        startActivity(new Intent(getApplicationContext(), Forum_Main.class));
+                        break;
+                }
+
+                return true;
+
+            }
+        });
     }
 }
