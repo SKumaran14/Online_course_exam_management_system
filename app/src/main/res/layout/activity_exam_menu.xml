@@ -23,6 +23,22 @@
         app:layout_constraintVertical_bias="0.286"
         app:srcCompat="@drawable/amigos_working_from_home" />
 
+    <ImageView
+        android:id="@+id/img_src_rst_html3"
+        android:layout_width="323dp"
+        android:layout_height="219dp"
+        android:background="#D3D3D3"
+        android:contentDescription="@string/learn"
+        android:elevation="-10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755"
+        app:srcCompat="@drawable/amigos_working_from_home" />
+
     <Button
         android:id="@+id/menuCss"
         android:layout_width="203dp"
@@ -34,7 +50,7 @@
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.441" />
+        app:layout_constraintVertical_bias="0.816" />
 
     <Button
         android:id="@+id/menuHtml"
@@ -47,7 +63,7 @@
         app:layout_constraintHorizontal_bias="0.394"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.251" />
+        app:layout_constraintVertical_bias="0.46" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"

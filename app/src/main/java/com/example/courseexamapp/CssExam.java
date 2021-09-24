@@ -216,7 +216,7 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
             btnNo.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(CssExam.this, ExamPhotoCapture.class);
+                    Intent intent = new Intent(CssExam.this, Menu.class);
                     startActivity(intent);
                 }
             });
