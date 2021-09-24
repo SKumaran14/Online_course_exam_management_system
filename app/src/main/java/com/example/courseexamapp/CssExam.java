@@ -37,7 +37,8 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
             new Question(R.string.q1c,false),
             new Question(R.string.q2c,false),
             new Question(R.string.q3c,true),
-            new Question(R.string.q4c,true),new Question(R.string.q5c,true)};
+            new Question(R.string.q4c,true),
+            new Question(R.string.q5c,true)};
 
     //Replacing images whie moving next questions
     private Integer images[]={R.mipmap.n1,R.mipmap.n2,R.mipmap.n3,R.mipmap.n4,R.mipmap.n5};
@@ -68,7 +69,6 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
         bottomNavClick();
     }
     public void timer2(){
-//        int correctCount = 0;
         myTimer = new CountDownTimer(7000,1000) {
 
             @Override
@@ -76,10 +76,12 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
                 time2.setText("00:" + String.format("%02d",millisUntilFinished/1000));
             }
 
+            //On CountDown timer finished
             @Override
             public void onFinish() {
                 time2.setVisibility(View.INVISIBLE);
                 remtime2.setVisibility(View.INVISIBLE);
+                //When Time is up but exam was not completed
                 if(index<questionBank2.length) {
                     img.setImageResource(R.drawable.timeup);
                     int marks = correctCount * 100 / (questionBank2.length);
@@ -134,6 +136,7 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
                 });
             }
             //Calculating correct answers with the answer declared in Question class
+            //If Option one is correct it is declared as true in the Question Bank
             private void checkAns(boolean uans) {
                 boolean isTrue = questionBank2[index].isAns();
                 if (uans == isTrue) {

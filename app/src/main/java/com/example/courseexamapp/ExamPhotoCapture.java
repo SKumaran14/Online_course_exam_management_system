@@ -40,7 +40,7 @@ public class ExamPhotoCapture extends AppCompatActivity {
         tlevel = findViewById(R.id.tlevel);
         txtPhoto = findViewById(R.id.txtphoto);
         myBottomNavigation = findViewById(R.id.bottomNavigationView);
-        bottomNavClick();
+        bottomNavClick(); // To call the functions form bottom Navigation bar
 
         //Same Alert Box created for both buttons to get consent about photo taking
         AlertDialog alertDialog = new AlertDialog.Builder(ExamPhotoCapture.this).create();
@@ -71,7 +71,7 @@ public class ExamPhotoCapture extends AppCompatActivity {
                 alertDialog.show();
             }
         });
-
+//Floating Action button navigates to Take Notes activity
         FloatingActionButton floatingActionButton = findViewById(R.id.floatingActionButton);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,6 +130,7 @@ public class ExamPhotoCapture extends AppCompatActivity {
         }
     };
 // End of battery percentage coding
+
 //For Bottom Navigationbar Function
 public void bottomNavClick(){
     myBottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

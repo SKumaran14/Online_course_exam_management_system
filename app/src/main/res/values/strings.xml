@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">CourseExamApp</string>
-    <!--    <string name="app_name">Code World</string>-->
+<!--String names of Jeyaseelan-->
+        <string name="app_name">Code World</string>
     <string name="btn_login">LOGIN</string>
     <string name="btn_signup">SIGNUP</string>
     <string name="btn_next">NEXT</string>
+    <string name="enter">Enter</string>
     <string name="btn_home">Home</string>
     <string name="btn_ldrbrd">LeaderBoard</string>
     <string name="btn_addqu">Add </string>
@@ -27,34 +28,16 @@
     <string name="exam">Exam</string>
     <string name="assignments">Tasks</string>
     <string name="mngadmin">Manage Admin</string>
-    <string name="txt_q1_html">Which tag is used for the biggest header?</string>
-    <string name="html_q1_a1">h6</string>
-    <string name="html_q1_a2">h7</string>
-    <string name="html_q1_a3">h1</string>
-    <string name="html_q1_a4">header1</string>
-    <string name="txt_q2_html">Which of the following tag is used to insert a line-break in HTML?</string>
-    <string name="html_q2_a1">br</string>
-    <string name="html_q2_a2">a</string>
-    <string name="html_q2_a3">pre</string>
-    <string name="html_q2_a4">b</string>
-    <string name="txt_q3_html">The tags in HTML are ?</string>
-    <string name="html_q3_a1">case-sensitive</string>
-    <string name="html_q3_a2">in upper case</string>
-    <string name="html_q3_a3">not case sensitive</string>
-    <string name="html_q3_a4">in lowercase</string>
-    <string name="names">1 Student1 85</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_scrolling2">ScrollingActivity2</string>
     <string name="category">Categories</string>
     <string name="menu2">Menu</string>
     <string name="sql">SQL</string>
     <string name="java">JAVA</string>
     <string name="python">Python</string>
-    <string name="title_activity_scrolling3">ScrollingActivity3</string>
     <string name="Yes">True</string>
     <string name="No">False</string>
-    <string name="private_notes">Private Notes</string>
-    <!--    For HTMl Exam-->
+    <string name="private_notes">Quick Notes</string>
+    <!--    For HTMl Exam Questions-->
     <string name="q1">Which is responsible for making the text bold in HTML?</string>
     <string name="q2"> Which tag is used for inserting the largest heading in HTML?</string>
     <string name="q3"> How to create an unordered list in HTML?</string>
@@ -97,9 +80,7 @@
     <string name="title_activity_css_exam">CssExam</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
     <!--Kumaran String Files-->
-    <!--    <string name="app_name">Code World</string>-->
     <string name="textview_assignment">Assignments</string>
     <string name="textview_java">Java</string>
     <string name="btn_java">Java</string>
@@ -151,10 +132,8 @@
     <string name="btn_cancel">Cancel</string>
     <string name="btn_delete">Delete</string>
     <string name="btn_update">update</string>
-
     <!--    Kajansika String Resources-->
     <!--    /search_course, not found-->
-
     <string name="course_python">Python</string>
     <string name="course_csharp">C#</string>
     <string name="course_html">HTML</string>
@@ -171,29 +150,22 @@
     <string name="categoryk">Category</string>
     <string name="result_sql">SQl</string>
     <string name="go_back">go_back</string>
-
     <!--    /your course-->
     <string name="title_course">Courses</string>
     <string name="btn_ur_python">Python</string>
     <string name="btn_ur_csharp">C#</string>
     <string name="btn_ur_html">HTML</string>
     <string name="btn_ur_enroll">Enroll More</string>
-
-
     <!--    /search result-->
     <string name="search_html">HTML</string>
     <string name="img_src_rst_html"> </string>
     <string name="btn_src_rsc_html">HTML</string>
     <string name="btn_no_more"> No More </string>
-
     <!--    /course_success-->
-
     <string name="txt_congrat">Congratulations !</string>
     <string name="txt_success">You Have Successfully Finished the Course !</string>
     <string name="btn_exam"> Exam</string>
-
     <!--    /admin_courses-->
-
     <string name="admin_menu_img_python"> </string>
     <string name="admin_menu_btn_python">Python</string>
     <string name="admin_menu_btn_csharp">C#</string>
@@ -203,54 +175,41 @@
     <string name="admin_edit"> Edit Course</string>
     <string name="admin_delete"> Delete Course</string>
     <string name="admin_img_menu"> </string>
-
     <!--    /course_content-->
-
     <string name="course_content_html"> HTML </string>
     <string name="content_head"> Tags For Headers </string>
     <string name="course_intro"> Introduction </string>
     <string name="course_content"> The header tag contains information related to the title and heading of the related content. </string>
     <string name="course_content1"> The header element is intended to usually contain the section\'s heading (an h1-h6 element or a group element), but this is not required. </string>
     <string name="course_content_next"> Next </string>
-
     <!--    /course_content-->
-
-
     <string name="admin_content_head"> Tags For Headers </string>
     <string name="admin_course_intro"> Introduction </string>
     <string name="admin_course_content"> The header tag contains information related to the title and heading of the related content. </string>
     <string name="admin_course_content1"> The header element is intended to usually contain the section\'s heading (an h1-h6 element or a group element), but this is not required. </string>
     <string name="admin_course_content_next"> Next </string>
     <string name="admin_course_content_save"> Save </string>
-
     <!--    /delete course-->
-
     <string name="del_python"> Python </string>
     <string name="del_html"> HTML </string>
     <string name="del_c"> C# </string>
-
     <!--    /course_sub_parts-->
-
     <string name="html_cont1"> Tags For Headers </string>
     <string name="html_cont2"> Links </string>
     <string name="html_cont3"> Tables </string>
     <string name="html_cont4"> Lists </string>
     <string name="html_cont5"> Formatting </string>
     <string name="cont_next"> Next </string>
-
     <!--    /Nav_bar-->
     <string name="menuk">Menu</string>
     <string name="forum">Forum</string>
-
     <!--    /Admin Edit course-->
     <string name="Edited_text">Edited_text</string>
-
     <!--    /admin_edit_course_sub-->
     <string name="search_sub">Search</string>
     <string name="edit_sub">Edit</string>
     <string name="add_sub">Add</string>
     <string name="delete_sub">Delete</string>
-
     <!--  Nithusha String resources-->
     <string name="forum_textView">Forum</string>
     <string name="Add_post_btn">Add Post</string>

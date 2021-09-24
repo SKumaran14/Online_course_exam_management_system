@@ -39,7 +39,7 @@ public class ChangePassword extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ChangePassword.this, Login.class);
                 startActivity(intent);
-                Toast.makeText(getApplicationContext(), "Password Changed ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Password Changed Successfully", Toast.LENGTH_SHORT).show();
                 showNotification();
             }
         });
@@ -54,7 +54,7 @@ public class ChangePassword extends AppCompatActivity {
         });
 //End of Intents
     }
-
+//For Notifications
     private void showNotification() {
         createNotificationChannel();
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), Ch_ID);

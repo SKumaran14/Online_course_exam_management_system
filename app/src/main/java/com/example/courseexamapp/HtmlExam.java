@@ -2,7 +2,6 @@ package com.example.courseexamapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -14,10 +13,10 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HtmlExam extends AppCompatActivity implements View.OnClickListener {
+    //Initial Variable Declaration
     private Button btnYes, btnNo;
     private TextView txtQu, time1, remtime1;
     private ImageView img;
@@ -25,15 +24,17 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
     private CountDownTimer myTimer;
     private static int correctCount = 0;
     private BottomNavigationView myBottomNavigation;
-
+//Questions for HTML Exam and boolean whether option 1 is correct or not
     private final Question[] questionBank = new Question[]{
             new Question(R.string.q1, true),
             new Question(R.string.q2, true),
             new Question(R.string.q3, true),
-            new Question(R.string.q4, false), new Question(R.string.q5, false)};
+            new Question(R.string.q4, false),
+            new Question(R.string.q5, false)};
 
+    //Image array for indicating Question numbers
     private final Integer images[] = {R.mipmap.n1, R.mipmap.n2, R.mipmap.n3, R.mipmap.n4, R.mipmap.n5};
-    private int option1[] = {R.string.a1, R.string.a2, R.string.a3, R.string.a4, R.string.a5};
+    private int option1[] = {R.string.a1, R.string.a2, R.string.a3, R.string.a4, R.string.a5}; // Array of option 1 , option 2
     private int option2[] = {R.string.i1, R.string.i2, R.string.i3, R.string.i4, R.string.i5};
 
     @Override
@@ -55,12 +56,11 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
         btnNo.setOnClickListener(this);
         btnYes.setOnClickListener(this);
         myBottomNavigation = findViewById(R.id.bottomNavigationView);
-        bottomNavClick();
+        bottomNavClick(); //To call the functions of bottomNavigation
     }
-
+//Timer for the exam 7 seconds
     public void timer1() {
         myTimer = new CountDownTimer(7000, 1000) {
-
             @Override
             public void onTick(long millisUntilFinished) {
                 time1.setText("00:" + String.format("%02d", millisUntilFinished / 1000));
@@ -70,6 +70,7 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
             public void onFinish() {
                 time1.setVisibility(View.INVISIBLE);
                 remtime1.setVisibility(View.INVISIBLE);
+                //When time is up but exam is not completed yet
                 if (index < questionBank.length) {
                     img.setImageResource(R.drawable.timeup);
                     int marks = correctCount * 100 / (questionBank.length);
@@ -152,7 +153,7 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
         }
     }
 
-    //a function for updating questions and calcualting marks
+    //a function for updating questions and calculating marks
     public void updateQue() {
         //Display Questions Count
         ProgressBar progressBar3 = findViewById(R.id.progressBar3);
@@ -170,7 +171,6 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
             btnNo.setText(option2[index]);
         } else { //at exam, finished
             int marks = correctCount * 100 / (questionBank.length);
-
             if (marks >= 80) {
                 img.setImageResource(R.drawable.success);
                 time1.setVisibility(View.INVISIBLE);
@@ -207,7 +207,7 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
             btnNo.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(HtmlExam.this, ExamPhotoCapture.class);
+                    Intent intent = new Intent(HtmlExam.this, Menu.class);
                     startActivity(intent);
                 }
             });

@@ -20,9 +20,10 @@ public class ExamMenu extends AppCompatActivity implements View.OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exam_menu);
+        //Before attending Exam
         AlertDialog alertDialog = new AlertDialog.Builder(ExamMenu.this).create();
-        alertDialog.setTitle("Online Exam Rules");
-        alertDialog.setMessage("No Back Navigation\nNo App Switching\nTimed Exam \nAutomated Correction\nPhoto Verification");
+        alertDialog.setTitle("Online Exam Conditions");
+        alertDialog.setMessage("No Back Navigation\nNo App Switching\nTimed Exam \nRealtime Automated Marking\nPhoto Verification");
 
         alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Accept", new DialogInterface.OnClickListener() {
             @Override
@@ -34,7 +35,7 @@ public class ExamMenu extends AppCompatActivity implements View.OnClickListener 
         btnHtml = findViewById(R.id.menuHtml);
         btnCss = findViewById(R.id.menuCss);
         myBottomNavigation = findViewById(R.id.bottomNavigationView);
-        bottomNavClick();
+        bottomNavClick(); // To get functions from the botton Navigation
         btnHtml.setOnClickListener(this);
         btnCss.setOnClickListener(this);
     }
@@ -44,11 +45,13 @@ public class ExamMenu extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.menuHtml:
+                //If HTML button clicked it prompt to HTML Exam
                 Intent intent1 = new Intent(ExamMenu.this, HtmlExam.class);
                 startActivity(intent1);
                 break;
 
             case R.id.menuCss:
+                // If CSS button clicked it prompt to CSS Exam
                 Intent intent2 = new Intent(ExamMenu.this,CssExam.class);
                 startActivity(intent2);
                 break;

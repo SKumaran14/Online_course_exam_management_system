@@ -18,17 +18,12 @@
     <color name="score">#00ff00</color>
     <color name="menu">#dadded</color>
     <color name="next">#009688</color>
-
 <!--    Kumaran-->
     <color name="Blue1">#2A69E3</color>
     <color name="light_gray">#F8F2EE</color>
     <color name="gray">#BEBAB3</color>
     <color name="light_ash">#E3EBFB</color>
-
 <!--    Kajansika-->
-
     <color name="l_blue">#0000FF</color>
     <color name="l_grey">#D3D3D3</color>
-
-
 </resources>
