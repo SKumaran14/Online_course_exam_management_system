@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#E91E63"
+    tools:context=".ExamPhotoCapture">
+
+    <TextView
+        android:id="@+id/txt_html2"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:background="@color/main"
+        android:backgroundTint="@color/main"
+        android:text="@string/exam"
+        android:textAlignment="center"
+        android:textColor="#FAFAFA"
+        android:textColorLink="#8C67CD"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/tlevel"
+        android:layout_width="149dp"
+        android:layout_height="66dp"
+        android:gravity="center"
+        android:textColor="@color/main"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649" />
+
+    <ImageView
+        android:id="@+id/imageExam"
+        android:layout_width="304dp"
+        android:layout_height="186dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.328"
+        tools:srcCompat="@drawable/photo" />
+
+    <Button
+        android:id="@+id/photoButton"
+        android:layout_width="203dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/main"
+        android:text="@string/btnphoto"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755" />
+
+    <TextView
+        android:id="@+id/txtphoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Photo"
+        android:textColor="@color/main"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <TextView
+        android:id="@+id/txtphoto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textColor="@color/hint"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/note2"
+        app:backgroundTint="@color/main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.877" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:fadingEdge="horizontal"
+        android:focusableInTouchMode="true"
+        android:rotation="0"
+        android:rotationX="0"
+        android:textAlignment="center"
+        app:backgroundTint="@color/main"
+        app:itemIconTint="@color/white"
+        app:itemTextAppearanceActive="@style/Widget.MaterialComponents.Toolbar"
+        app:itemTextAppearanceInactive="@style/MaterialAlertDialog.MaterialComponents.Title.Icon.CenterStacked"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottomnav_bar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

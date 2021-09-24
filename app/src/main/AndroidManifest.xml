@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.courseexamapp">
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupOnly="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CourseExamApp">
+
+        <activity
+            android:name=".your_courses"
+            android:exported="true" />
+        <activity
+            android:name=".search_result"
+            android:exported="true" />
+        <activity
+            android:name=".search_course"
+            android:exported="true" />
+        <activity
+            android:name=".recyclerview"
+            android:exported="true" />
+        <activity
+            android:name=".not_found"
+            android:exported="true" />
+        <activity
+            android:name=".enrollment_confirmation"
+            android:exported="true" />
+        <activity
+            android:name=".delete_course_alert"
+            android:exported="true" />
+        <activity
+            android:name=".delete_course"
+            android:exported="true" />
+        <activity
+            android:name=".course_success"
+            android:exported="true" />
+        <activity
+            android:name=".course_sub_parts"
+            android:exported="true" />
+        <activity
+            android:name=".course_content"
+            android:exported="true" />
+        <activity
+            android:name=".admin_edit_course_content"
+            android:exported="true" />
+        <activity
+            android:name=".admin_courses"
+            android:exported="true" />
+        <activity
+            android:name=".admin_course_sub_parts"
+            android:exported="true" />
+        <activity
+            android:name=".Add_assignment"
+            android:exported="true" />
+        <activity
+            android:name=".Settings"
+            android:exported="true" />
+        <activity
+            android:name=".Forum"
+            android:exported="true" /> <!-- <activity -->
+        <!-- android:name=".Posts" -->
+        <!-- android:exported="true" /> -->
+        <activity
+            android:name=".Forum_Main"
+            android:exported="true" />
+        <activity
+            android:name=".UsersList"
+            android:exported="true" />
+        <activity
+            android:name=".Assignment_Home"
+            android:exported="true" />
+        <activity
+            android:name=".upload_file"
+            android:exported="true" />
+        <activity
+            android:name=".Assignment_Success"
+            android:exported="true" />
+        <activity
+            android:name=".assignment_submit"
+            android:exported="true" />
+        <activity
+            android:name=".CreateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StudyNotesStudent"
+            android:exported="true" />
+        <activity
+            android:name=".Signup"
+            android:exported="true" />
+        <activity
+            android:name=".Menu"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HtmlExam"
+            android:exported="true" />
+        <activity
+            android:name=".ExamPhotoCapture"
+            android:exported="true" />
+        <activity
+            android:name=".ExamMenu"
+            android:exported="true" />
+        <activity
+            android:name=".CssExam"
+            android:exported="true" />
+        <activity
+            android:name=".ChangePassword"
+            android:exported="true" /> <!-- <activity -->
+        <!-- android:name=".CreateActivity" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

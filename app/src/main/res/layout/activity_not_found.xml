@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="312dp"
+        android:layout_height="55dp"
+        android:background="#D3D3D3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:fadingEdge="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:rotation="0"
+        android:rotationX="0"
+        android:textAlignment="center"
+        app:backgroundTint="@color/main"
+        app:itemIconTint="@color/white"
+        app:itemTextAppearanceActive="@style/Widget.MaterialComponents.Toolbar"
+        app:itemTextAppearanceInactive="@style/MaterialAlertDialog.MaterialComponents.Title.Icon.CenterStacked"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottomnav_bar" />
+
+    <Button
+        android:id="@+id/not_found"
+        android:layout_width="213dp"
+        android:layout_height="74dp"
+        android:backgroundTint="@color/main"
+        android:gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="@string/not_found"
+        android:textAlignment="center"
+        android:textColor="#F8F8FF"
+        android:textSize="20sp"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539" />
+
+    <ImageButton
+        android:id="@+id/go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/learn"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039"
+        app:srcCompat="@drawable/abc_vector_test"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

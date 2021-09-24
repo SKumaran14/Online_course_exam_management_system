@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExamMenu">
+
+
+    <ImageView
+        android:id="@+id/img_src_rst_html2"
+        android:layout_width="323dp"
+        android:layout_height="219dp"
+        android:background="#D3D3D3"
+        android:contentDescription="@string/learn"
+        android:elevation="-10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.398"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.286"
+        app:srcCompat="@drawable/amigos_working_from_home" />
+
+    <Button
+        android:id="@+id/menuCss"
+        android:layout_width="203dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/main"
+        android:text="@string/txt_css"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441" />
+
+    <Button
+        android:id="@+id/menuHtml"
+        android:layout_width="203dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/main"
+        android:text="@string/txt_html"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="1dp"
+        android:clickable="true"
+        android:fadingEdge="horizontal"
+        android:focusableInTouchMode="true"
+        android:rotation="0"
+        android:rotationX="0"
+        android:textAlignment="center"
+        app:backgroundTint="@color/main"
+        app:itemIconTint="@color/white"
+        app:itemTextAppearanceActive="@style/Widget.MaterialComponents.Toolbar"
+        app:itemTextAppearanceInactive="@style/MaterialAlertDialog.MaterialComponents.Title.Icon.CenterStacked"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:menu="@menu/bottomnav_bar" />
+
+    <TextView
+        android:id="@+id/txt_html5"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:background="@color/main"
+        android:backgroundTint="@color/main"
+        android:text="@string/exam"
+        android:textAlignment="center"
+        android:textColor="#FAFAFA"
+        android:textColorLink="#8C67CD"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/tlevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_html5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
