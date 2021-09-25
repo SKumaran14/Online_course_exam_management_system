@@ -89,7 +89,7 @@
             android:name=".StudyNotesStudent"
             android:exported="true" />
         <activity
-            android:name=".Signup"
+            android:name=".Menu"
             android:exported="true" />
         <activity
             android:name=".Login"
@@ -120,7 +120,7 @@
         <!-- </intent-filter> -->
         <!-- </activity> -->
         <activity
-            android:name=".Menu"
+            android:name=".Signup"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

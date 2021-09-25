@@ -43,19 +43,21 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
 //            finish();
 //        }
 //
-//        logoutImage.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
+        logoutImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this, Login.class);
+                startActivity(intent);
+                finish();
+            }
+
+        });
+    }
+
+
+
 //                if(firebaseAuth != null) {
 //                    firebaseAuth.signOut();
-//                    Intent intent = new Intent(Menu.this,Login.class);
-//                    startActivity(intent);
-//                    finish();
-//                }
-//            }
-//        });
-
-    }
 
     @Override
     public void onClick(View v) {

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -17,6 +18,8 @@ public class Login extends AppCompatActivity {
     private Button btnlogin;
     private Button btnsignup;
     private Button btnchangepassword;
+    private EditText username,password;
+    DBHelper DB ;
     private BottomNavigationView myBottomNavigation;
 //    private FirebaseAuth firebaseAuth;
     @Override
@@ -24,10 +27,13 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        btnlogin = findViewById(R.id.btn_login);
-        btnsignup = findViewById(R.id.btn_signup);
+        btnlogin = findViewById(R.id.btn_llogin);
+        btnsignup = findViewById(R.id.btn_lsignup);
         btnchangepassword = findViewById(R.id.btn_chgpas);
         myBottomNavigation = findViewById(R.id.bottomNavigationView);
+        username = findViewById(R.id.lemail);
+        password = findViewById(R.id.lpassword);
+        DB = new DBHelper(this);
         bottomNavClick();
 
 //        firebaseAuth = FirebaseAuth.getInstance();
@@ -38,22 +44,38 @@ public class Login extends AppCompatActivity {
 //            finish();
 //        }
 
-        btnlogin.setOnClickListener(new View.OnClickListener() {
+        btnsignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login.this,Menu.class);
-                Toast.makeText(getApplicationContext(),"A First Step to Betterment",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Login.this,Signup.class);
                 startActivity(intent);
             }
         });
 
-        btnsignup.setOnClickListener(new View.OnClickListener() {
+        btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login.this, Signup.class);
-                startActivity(intent);
+                String user = username.getText().toString();
+                String pass = password.getText().toString();
+
+                if(user.equals("") || pass.equals("")){
+                    Toast.makeText(Login.this,"Please Enter All the fields",Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Boolean checkuserPass = DB.checkusernamepassword(user,pass);
+                    if(checkuserPass == true){
+                        Toast.makeText(Login.this,"Login Successful",Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(Login.this, Menu.class);
+                        startActivity(intent);
+                    }
+                    else{
+                        Toast.makeText(Login.this,"Invalid Credentials",Toast.LENGTH_SHORT).show();
+                    }
+                }
             }
         });
+
+
 
         btnchangepassword.setOnClickListener(new View.OnClickListener() {
             @Override

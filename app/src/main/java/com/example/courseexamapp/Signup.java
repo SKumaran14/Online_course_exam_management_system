@@ -29,9 +29,9 @@ public class Signup extends AppCompatActivity {
     private Button signup;
     private final String Ch_ID = "Code World";
     private final int Noti_ID = 1;
-    private EditText email;
-    private EditText password;
+    private EditText username,password,repassword;
     private BottomNavigationView myBottomNavigation;
+    DBHelper DB;
 //    private FirebaseAuth firebaseAuth;
 //    private ProgressDialog progressDialog;
 
@@ -43,10 +43,13 @@ public class Signup extends AppCompatActivity {
 
         login = findViewById(R.id.btn_login);
         signup = findViewById(R.id.btn_signup);
-        email = findViewById(R.id.input_semail);
-        password = findViewById(R.id.input_spass);
+        username = findViewById(R.id.semail);
+        password = findViewById(R.id.spassword);
+        repassword = findViewById(R.id.srepassword);
         myBottomNavigation = findViewById(R.id.bottomNavigationView);
+        DB = new DBHelper(this);
         bottomNavClick();
+
 //        firebaseAuth = FirebaseAuth.getInstance();
 //        progressDialog = new ProgressDialog(this);
 
@@ -63,6 +66,39 @@ public class Signup extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String user = username.getText().toString();
+                String pass = password.getText().toString();
+                String repass = repassword.getText().toString();
+
+                if (user.equals("") || pass.equals("") || repass.equals("")) {
+                    Toast.makeText(Signup.this, "Please Enter All Fields", Toast.LENGTH_SHORT).show();
+                } else {
+                    if (pass.equals(repass)) {
+                        Boolean checkuser = DB.checkusername(user);
+                            if (checkuser == false) {
+                                Boolean insert = DB.insertData(user, pass);
+                                if (insert == true) {
+                                    Toast.makeText(Signup.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
+                                    startActivity(new Intent(Signup.this, Menu.class));
+                                } else {
+                                    Toast.makeText(Signup.this, "Registration Failed", Toast.LENGTH_SHORT).show();
+                                }
+                            } else {
+                                Toast.makeText(Signup.this, "Email address already exists, Please Login", Toast.LENGTH_SHORT).show();
+                            }
+                    }
+                            else{
+                            Toast.makeText(Signup.this, "Passwords do not match", Toast.LENGTH_SHORT).show();
+                        }
+                        }
+                    }
+
+
+
+        });
+        showNotification();
+    }
+        //____________________For Firebase----------------------------//
 //                String strEmail = email.getText().toString();
 //                String strPassword = password.getText().toString();
 //
@@ -87,15 +123,10 @@ public class Signup extends AppCompatActivity {
 //                else{
 //                    Toast.makeText(Signup.this,"Email Or Password is Empty",Toast.LENGTH_SHORT).show();
 //                }
+//_______________________For Firebase----------------------------------------------------
 
-                Intent intent = new Intent(Signup.this, Menu.class);
-                startActivity(intent);
-                showNotification();
-            }
-        });
-    }
 
-//Regarding Notifications
+            //Regarding Notifications
     private void showNotification(){
         createNotificationChannel();
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), Ch_ID);
