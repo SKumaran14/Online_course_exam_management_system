@@ -95,14 +95,14 @@
 
             <TextView
                 android:id="@+id/textview_date2"
-                android:layout_width="112dp"
-                android:layout_height="27dp"
+                android:layout_width="145dp"
+                android:layout_height="45dp"
                 android:gravity="center"
                 android:text="@string/textview_date2"
                 android:textColor="@color/black"
                 app:layout_constraintBaseline_toBaselineOf="@+id/textView_save_file"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.725"
+                app:layout_constraintHorizontal_bias="0.909"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView

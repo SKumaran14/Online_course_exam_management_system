@@ -10,7 +10,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -227,7 +226,7 @@ public class StudyNotesStudent extends AppCompatActivity {
 
             public ViewHolder(View itemView){
                 super(itemView);
-                ID = itemView.findViewById(R.id.textView);
+                ID = itemView.findViewById(R.id.textView_filename);
                 Chapter = itemView.findViewById(R.id.textView2);
                 Notes = itemView.findViewById(R.id.textView3);
                 layout = itemView.findViewById(R.id.list_layout);

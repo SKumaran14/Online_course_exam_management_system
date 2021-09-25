@@ -35,20 +35,59 @@
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/border15"
+            android:layout_width="316dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/border_with_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.043">
+
+
+            <TextView
+                android:id="@+id/textView_filename"
+                android:layout_width="97dp"
+                android:layout_height="22dp"
+                android:text="@string/text_view_file"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.152"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/textView2"
+                android:layout_width="104dp"
+                android:layout_height="45dp"
+                android:text="Filename"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.822"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.512" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/border10"
             android:layout_width="316dp"
             android:layout_height="86dp"
             android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
             android:background="@drawable/border_with_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.48"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.28">
+            app:layout_constraintVertical_bias="0.384">
 
             <TextView
                 android:id="@+id/textview_attachment"
@@ -67,15 +106,14 @@
                 android:id="@+id/btn_choose_file"
                 android:layout_width="136dp"
                 android:layout_height="57dp"
+                android:layout_marginStart="152dp"
                 android:text="@string/btn_choose_file"
                 android:textColor="@color/white"
                 app:backgroundTint="@color/Blue1"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.911"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.068" />
+                app:layout_constraintVertical_bias="0.448" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
