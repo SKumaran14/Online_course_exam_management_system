@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Posts">
+
+
+        <TextView
+            android:id="@+id/post_textView"
+            android:layout_width="383dp"
+            android:layout_height="41dp"
+            android:background="@color/main"
+            android:gravity="center"
+            android:text="@string/post_textView"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/main"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+
+
+        <TextView
+            android:id="@+id/post_background_textview"
+            android:layout_width="280dp"
+            android:layout_height="303dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/background_border"
+            android:gravity="center"
+            android:text=""
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fadingEdge="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:rotation="0"
+            android:rotationX="0"
+            android:textAlignment="center"
+            app:backgroundTint="@color/main"
+            app:itemIconTint="@color/white"
+            app:itemTextAppearanceActive="@style/Widget.MaterialComponents.Toolbar"
+            app:itemTextAppearanceInactive="@style/MaterialAlertDialog.MaterialComponents.Title.Icon.CenterStacked"
+            app:itemTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.997"
+            app:menu="@menu/bottomnav_bar" />
+
+        <ImageView
+            android:id="@+id/imageview_post"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:contentDescription="@string/imageview_chat_forum"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.248"
+            app:srcCompat="@drawable/account" />
+
+        <TextView
+            android:id="@+id/post_textview"
+            android:layout_width="229dp"
+            android:layout_height="57dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_corner_border"
+            android:text="@string/chat_textview_forum"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.631"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.232" />
+
+        <ImageView
+            android:id="@+id/imageView2_post"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:contentDescription="@string/imageView2_chat_forum"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.934"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.452"
+            app:srcCompat="@drawable/account" />
+
+        <TextView
+            android:id="@+id/chat_lec_textview_post"
+            android:layout_width="229dp"
+            android:layout_height="57dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_corner_border"
+            android:text="@string/chat_lec_textview_forum"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.28"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.44" />
+
+        <ImageView
+            android:id="@+id/imageView3_post"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:contentDescription="@string/imageView3_lecture_forum"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.655"
+            app:srcCompat="@drawable/account" />
+
+        <TextView
+            android:id="@+id/chat_textView2_post"
+            android:layout_width="228dp"
+            android:layout_height="74dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_corner_border"
+            android:gravity="center"
+            android:text="@string/chat_textView2_forum"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.633"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.651" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
