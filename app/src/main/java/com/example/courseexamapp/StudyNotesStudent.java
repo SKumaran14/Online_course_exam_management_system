@@ -20,6 +20,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -29,7 +34,7 @@ public class StudyNotesStudent extends AppCompatActivity {
     private EditText editTextNotes;
     String ID;
     private BottomNavigationView myBottomNavigation;
-//    private DatabaseReference mDatabase;
+    private DatabaseReference mDatabase;
 
 
     @Override
@@ -37,7 +42,7 @@ public class StudyNotesStudent extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_study_notes_student);
 
-//        mDatabase = FirebaseDatabase.getInstance().getReference("StudyNotes");
+        mDatabase = FirebaseDatabase.getInstance().getReference("StudyNotes");
 
         Button buttonSave = findViewById(R.id.button);
         Button buttonUpdate = findViewById(R.id.button3);
@@ -54,8 +59,8 @@ public class StudyNotesStudent extends AppCompatActivity {
             if(chapter.isEmpty() || notes.isEmpty()){
                 Toast.makeText(StudyNotesStudent.this,"Please Fill the Fields", Toast.LENGTH_SHORT).show();
             } else{
-////                String Id = mDatabase.push().getKey();
-//                createData(Id,chapter,notes);
+                String Id = mDatabase.push().getKey();
+                createData(Id,chapter,notes);
 
                 editTextChapter.getText().clear();
                 editTextNotes.getText().clear();
@@ -70,7 +75,7 @@ public class StudyNotesStudent extends AppCompatActivity {
                 Toast.makeText(StudyNotesStudent.this,"Please Fill the Fields", Toast.LENGTH_SHORT).show();
             } else{
                 if(ID!= null) {
-//                    createData(ID, chapter, notes);
+                    createData(ID, chapter, notes);
                 }else{
                     Toast.makeText(StudyNotesStudent.this,"Please Fill the Fields", Toast.LENGTH_SHORT).show();
                 }
@@ -85,41 +90,41 @@ public class StudyNotesStudent extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(StudyNotesStudent.this));
         MyAdapter myAdapter = new MyAdapter(this, notes_id,chapter,notes);
 
-//        ValueEventListener eventListener = new ValueEventListener() {
-//            @Override
-//            public void onDataChange( DataSnapshot snapshot) {
-//                notes_id.clear();
-//                chapter.clear();
-//                notes.clear();
-//
-//                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-//                    String id1 = dataSnapshot.child("id").getValue(String.class);
-//                    String chapter1 = dataSnapshot.child("chapter").getValue(String.class);
-//                    String notes1 = dataSnapshot.child("notes").getValue(String.class);
-//
-//                    notes_id.add(id1);
-//                    chapter.add(chapter1);
-//                    notes.add(notes1);
-//                }
+        ValueEventListener eventListener = new ValueEventListener() {
+            @Override
+            public void onDataChange( DataSnapshot snapshot) {
+                notes_id.clear();
+                chapter.clear();
+                notes.clear();
+
+                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    String id1 = dataSnapshot.child("id").getValue(String.class);
+                    String chapter1 = dataSnapshot.child("chapter").getValue(String.class);
+                    String notes1 = dataSnapshot.child("notes").getValue(String.class);
+
+                    notes_id.add(id1);
+                    chapter.add(chapter1);
+                    notes.add(notes1);
+                }
 
                 recyclerView.setAdapter(myAdapter);
                 myAdapter.notifyDataSetChanged();
             }
 
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//                Toast.makeText(StudyNotesStudent.this,(CharSequence) error.toException(),Toast.LENGTH_SHORT).show();
-//            }
-//        };
-//        mDatabase.addValueEventListener(eventListener);
-//
-//    }
-//
-//    private void createData(String ID, String chapter,String notes){
-//        StudyNotes studyNotes= new StudyNotes(ID,chapter,notes);
-//        mDatabase.child(ID).setValue(studyNotes);
-//        Toast.makeText(this,"Notes Successfully Saved",Toast.LENGTH_SHORT).show();
-//    }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(StudyNotesStudent.this,(CharSequence) error.toException(),Toast.LENGTH_SHORT).show();
+            }
+        };
+        mDatabase.addValueEventListener(eventListener);
+
+    }
+
+    private void createData(String ID, String chapter,String notes){
+        StudyNotes studyNotes= new StudyNotes(ID,chapter,notes);
+        mDatabase.child(ID).setValue(studyNotes);
+        Toast.makeText(this,"Notes Successfully Saved",Toast.LENGTH_SHORT).show();
+    }
 
     public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
         Context context;
@@ -141,7 +146,7 @@ public class StudyNotesStudent extends AppCompatActivity {
         @SuppressLint("RecyclerView")
         @Override
         public void onBindViewHolder(@NonNull MyAdapter.ViewHolder holder, int position) {
-//          holder.ID.setText((CharSequence)book_id.get(position));
+          holder.ID.setText((CharSequence)chapter.get(position));
             holder.ID.setVisibility(View.GONE);
 
             holder.Chapter.setText("Title : " + (CharSequence)chapter.get(position));
@@ -166,7 +171,7 @@ public class StudyNotesStudent extends AppCompatActivity {
                                     break;
 
                                 case R.id.item_2:
-//                                    mDatabase.child((String)notes_id.get(position)).removeValue();
+                                    mDatabase.child((String)notes_id.get(position)).removeValue();
                                     Toast.makeText(getApplicationContext(),"Data Deleted Successfully",Toast.LENGTH_SHORT).show();
                                     break;
                                 case R.id.item_3:

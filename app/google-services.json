@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "882462905438",
+    "firebase_url": "https://online-course-app-615b3-default-rtdb.firebaseio.com",
+    "project_id": "online-course-app-615b3",
+    "storage_bucket": "online-course-app-615b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882462905438:android:87092946b944a4c5ee90cf",
+        "android_client_info": {
+          "package_name": "com.example.courseexamapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882462905438-bm85k088rdedb6chvdlcuie08g20g7f3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJVJ4V0O5b7yUFA4oAi8Cn0gUjon79yG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882462905438-bm85k088rdedb6chvdlcuie08g20g7f3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882462905438:android:97669dadb68f8458ee90cf",
+        "android_client_info": {
+          "package_name": "com.example.online_course_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882462905438-bm85k088rdedb6chvdlcuie08g20g7f3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJVJ4V0O5b7yUFA4oAi8Cn0gUjon79yG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882462905438-bm85k088rdedb6chvdlcuie08g20g7f3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
