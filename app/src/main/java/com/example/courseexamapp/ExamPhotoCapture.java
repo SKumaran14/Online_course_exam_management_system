@@ -107,7 +107,7 @@ public class ExamPhotoCapture extends AppCompatActivity {
             });
         }// When photo has not taken successfully , return back and display a toast
         else if (requestCode == CAMERA_REQUEST && resultCode == RESULT_CANCELED) {
-            Toast.makeText(getApplicationContext(), "Please Confirm Identity", Toast.LENGTH_SHORT).show(); //works}
+            Toast.makeText(getApplicationContext(), "Please Confirm Identity", Toast.LENGTH_SHORT).show(); 
         }
     }
     //End of Photo taking

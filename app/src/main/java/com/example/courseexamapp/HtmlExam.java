@@ -230,7 +230,6 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
         }
     }
 
-    //---------------------------------------------------------------------------------------------
     @Override
     public void onBackPressed() {
         super.onBackPressed();
@@ -240,8 +239,6 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
             startActivity(new Intent(HtmlExam.this, ExamPhotoCapture.class));
         }
     }
-
-//----------------------------------------------------------------------------------------------------------
 
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
@@ -253,7 +250,6 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
             }
         }
     }
-    //----------------------------------------------------------------------------------------------------------
     private void cancelExam() {
         if (index < questionBank.length) { //At the Exam Time Multi tasking stopped
             Toast.makeText(getApplicationContext(), "Focus Missed", Toast.LENGTH_SHORT).show();
