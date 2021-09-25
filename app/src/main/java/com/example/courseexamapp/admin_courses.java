@@ -18,7 +18,7 @@ public class admin_courses extends AppCompatActivity {
     private Button admin_html;
     private ImageView back;
     private BottomNavigationView myBottomNavigation;
-
+//admin
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
