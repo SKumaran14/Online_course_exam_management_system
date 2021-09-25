@@ -203,6 +203,16 @@
     <string name="admin_edit"> Edit Course</string>
     <string name="admin_delete"> Delete Course</string>
     <string name="admin_img_menu"> </string>
+    <string name="admin_logout"> Logout </string>
+
+    <!--    /admin_login-->
+
+    <string name="admin_username"> </string>
+    <string name="admin_pw"> </string>
+    <string name="admin_login"> Login </string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="log_in">LOG IN</string>
 
     <!--    /course_content-->
 
