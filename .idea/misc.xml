@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_assignment_submit.xml" value="0.1" />
+        <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_add_assignment.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_assignment_submit.xml" value="0.4" />
         <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_assignment_success.xml" value="0.25416666666666665" />
         <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_assignment_update_delete.xml" value="0.25416666666666665" />
         <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_main.xml" value="0.13020833333333334" />
