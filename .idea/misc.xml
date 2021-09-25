@@ -3,23 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_add_assignment.xml" value="0.25416666666666665" />
         <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_assignment_update_delete.xml" value="0.11614583333333334" />
-        <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_update_delete.xml" value="0.24010416666666667" />
-        <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_upload_file.xml" value="0.4" />
         <entry key="..\:/Users/Jeyaseelan/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_change_password.xml" value="0.24375" />
-        <entry key="..\:/Users/Jeyaseelan/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_create.xml" value="0.24375" />
         <entry key="..\:/Users/Jeyaseelan/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_css_exam.xml" value="0.24375" />
         <entry key="..\:/Users/Jeyaseelan/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_exam_menu.xml" value="0.24375" />
         <entry key="..\:/Users/Jeyaseelan/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_exam_photo_capture.xml" value="0.24375" />
-        <entry key="..\:/Users/Jeyaseelan/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_forum.xml" value="0.24375" />
-        <entry key="..\:/Users/Jeyaseelan/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_forum_main.xml" value="0.24375" />
         <entry key="..\:/Users/Jeyaseelan/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_login.xml" value="0.24375" />
         <entry key="..\:/Users/Jeyaseelan/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_main.xml" value="0.24375" />
         <entry key="..\:/Users/Jeyaseelan/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_menu.xml" value="0.24375" />
         <entry key="..\:/Users/Jeyaseelan/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_posts.xml" value="0.24375" />
-        <entry key="..\:/Users/Jeyaseelan/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_signup.xml" value="0.24375" />
         <entry key="..\:/Users/Jeyaseelan/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_study_notes_student.xml" value="0.24375" />
         <entry key="..\:/Users/Jeyaseelan/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_your_course.xml" value="0.24375" />
         <entry key="..\:/Users/Jeyaseelan/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/list_items.xml" value="0.24375" />

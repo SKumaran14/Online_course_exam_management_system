@@ -27,7 +27,7 @@ public class delete_course extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(delete_course.this, admin_course_sub_parts.class);
+                Intent intent = new Intent(delete_course.this, admin_courses.class);
                 startActivity(intent);
             }
         });

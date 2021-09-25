@@ -43,7 +43,8 @@ public class admin_edit_course_content extends AppCompatActivity {
                 Toast.makeText(admin_edit_course_content.this, "Saved Succesfully",  Toast.LENGTH_SHORT).show();
                 String stradmin_course_content = admin_course_content.getText().toString();
                 String stradmin_course_content1 = admin_course_content1.getText().toString();
-                Edited_text.setText(stradmin_course_content + "\n" + stradmin_course_content1);
+
+                Edited_text.setText(new StringBuilder().append(stradmin_course_content).append("\n").append(stradmin_course_content1).toString());
             }
         });
 

@@ -11,6 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CourseExamApp">
         <activity
+            android:name=".admin_course_view"
+            android:exported="true" />
+        <activity
+            android:name=".admin_login"
+            android:exported="true" />
+        <activity
+            android:name=".admin_courses"
+            android:exported="true" />
+        <activity
             android:name=".your_courses"
             android:exported="true" />
         <activity
@@ -44,10 +53,7 @@
             android:name=".course_content"
             android:exported="true" />
         <activity
-            android:name=".admin_edit_course_content"
-            android:exported="true" />
-        <activity
-            android:name=".admin_courses"
+            android:name=".Menu"
             android:exported="true" />
         <activity
             android:name=".admin_course_sub_parts"
@@ -62,8 +68,8 @@
             android:name=".Forum"
             android:exported="true" />
         <activity
-        android:name=".Posts"
-         android:exported="true" />
+            android:name=".Posts"
+            android:exported="true" />
         <activity
             android:name=".Forum_Main"
             android:exported="true" />
@@ -89,7 +95,7 @@
             android:name=".StudyNotesStudent"
             android:exported="true" />
         <activity
-            android:name=".Menu"
+            android:name=".admin_edit_course_content"
             android:exported="true" />
         <activity
             android:name=".Login"

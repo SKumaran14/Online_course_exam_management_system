@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".admin_courses">
 
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="23dp"
+        android:layout_height="262dp"
+        android:background="#D3D3D3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </ScrollView>
+
     <TextView
         android:id="@+id/course_content_html"
         android:layout_width="383dp"
@@ -70,7 +85,7 @@
         android:id="@+id/admin_menu_btn_html"
         android:layout_width="298dp"
         android:layout_height="88dp"
-        android:backgroundTint="@color/main"
+        android:background="@color/main"
         android:elevation="10dp"
         android:text="@string/admin_menu_btn_html"
         android:textAlignment="center"
@@ -85,9 +100,9 @@
 
     <Button
         android:id="@+id/admin_delete"
-        android:layout_width="170dp"
-        android:layout_height="71dp"
-        android:backgroundTint="@color/main"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:background="@color/main"
         android:text="@string/admin_delete"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -103,6 +118,7 @@
         android:id="@+id/admin_edit"
         android:layout_width="160dp"
         android:layout_height="50dp"
+        android:background="@color/main"
         android:backgroundTint="@color/main"
         android:text="@string/admin_edit"
         android:textAlignment="center"
@@ -136,6 +152,18 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottomnav_bar" />
+
+    <Button
+        android:id="@+id/admin_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

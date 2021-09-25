@@ -60,7 +60,7 @@
 
     <TextView
         android:id="@+id/course_content"
-        android:layout_width="358dp"
+        android:layout_width="360dp"
         android:layout_height="150dp"
 
         android:text="@string/course_content"
@@ -70,10 +70,10 @@
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintTop_toBottomOf="@+id/course_intro"
+        app:layout_constraintVertical_bias="0.028" />
 
     <TextView
         android:id="@+id/course_intro"
@@ -85,10 +85,10 @@
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292" />
+        app:layout_constraintVertical_bias="0.228" />
 
     <TextView
         android:id="@+id/content_head"
@@ -102,7 +102,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.154" />
+        app:layout_constraintVertical_bias="0.127" />
 
     <Button
         android:id="@+id/course_content_next"
@@ -117,19 +117,19 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.859" />
+        app:layout_constraintVertical_bias="0.898" />
 
     <TextView
         android:id="@+id/course_content1"
-        android:layout_width="362dp"
-        android:layout_height="216dp"
+        android:layout_width="360dp"
+        android:layout_height="210dp"
         android:text="@string/course_content1"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.408"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.765" />
+        app:layout_constraintTop_toBottomOf="@+id/course_content"
+        app:layout_constraintVertical_bias="0.162" />
 </androidx.constraintlayout.widget.ConstraintLayout>

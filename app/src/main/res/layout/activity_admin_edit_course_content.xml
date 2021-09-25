@@ -53,7 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.154" />
+        app:layout_constraintVertical_bias="0.124" />
 
     <TextView
         android:id="@+id/admin_course_intro"
@@ -65,10 +65,10 @@
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintHorizontal_bias="0.129"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.237" />
+        app:layout_constraintVertical_bias="0.213" />
 
     <Button
         android:id="@+id/admin_course_content_next"
@@ -83,14 +83,13 @@
         app:layout_constraintHorizontal_bias="0.812"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.894" />
+        app:layout_constraintVertical_bias="0.84" />
 
     <Button
         android:id="@+id/admin_course_content_save"
         android:layout_width="128dp"
         android:layout_height="61dp"
         android:backgroundTint="@color/main"
-        android:onClick="showAlertDialog"
         android:text="@string/admin_course_content_save"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -99,7 +98,7 @@
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.894" />
+        app:layout_constraintVertical_bias="0.84" />
 
     <TextView
         android:id="@+id/course_content_html"
@@ -133,7 +132,8 @@
     <EditText
         android:id="@+id/admin_course_content"
         android:layout_width="360dp"
-        android:layout_height="140dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="280dp"
         android:ems="10"
         android:hint="@string/admin_course_content"
         android:importantForAutofill="no"
@@ -141,16 +141,16 @@
         android:text="@string/admin_course_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintHorizontal_bias="0.274"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35"
+        app:layout_constraintTop_toBottomOf="@+id/admin_course_intro"
+        app:layout_constraintVertical_bias="0.057"
         tools:ignore="EditableContentDescCheck" />
 
     <EditText
         android:id="@+id/admin_course_content1"
-        android:layout_width="360dp"
-        android:layout_height="140dp"
+        android:layout_width="355dp"
+        android:layout_height="78dp"
         android:ems="10"
         android:hint="@string/admin_course_content1"
         android:importantForAutofill="no"
@@ -158,20 +158,20 @@
         android:text="@string/admin_course_content1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_course_content"
+        app:layout_constraintVertical_bias="0.032" />
 
     <TextView
         android:id="@+id/Edited_text"
-        android:layout_width="358dp"
-        android:layout_height="93dp"
+        android:layout_width="330dp"
+        android:layout_height="189dp"
         android:text="@string/Edited_text"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/admin_course_content_next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.301"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.788" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_course_content1"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
