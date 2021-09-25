@@ -47,7 +47,7 @@ public class Signup extends AppCompatActivity {
         password = findViewById(R.id.spassword);
         repassword = findViewById(R.id.srepassword);
         myBottomNavigation = findViewById(R.id.bottomNavigationView);
-        DB = new DBHelper(this);
+        DB = new DBHelper(this); // Database helper instance
         bottomNavClick();
 
 //        firebaseAuth = FirebaseAuth.getInstance();
@@ -59,7 +59,6 @@ public class Signup extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Signup.this, Login.class);
                 startActivity(intent);
-
             }
         });
         //Signup button inside the signup page
@@ -70,13 +69,13 @@ public class Signup extends AppCompatActivity {
                 String pass = password.getText().toString();
                 String repass = repassword.getText().toString();
 
-                if (user.equals("") || pass.equals("") || repass.equals("")) {
+                if (user.equals("") || pass.equals("") || repass.equals("")) { //If any of fields are empty
                     Toast.makeText(Signup.this, "Please Enter All Fields", Toast.LENGTH_SHORT).show();
                 } else {
-                    if (pass.equals(repass)) {
-                        Boolean checkuser = DB.checkusername(user);
-                            if (checkuser == false) {
-                                Boolean insert = DB.insertData(user, pass);
+                    if (pass.equals(repass)) { // checking both passwords are same
+                        Boolean checkuser = DB.checkUsername(user); // email address already existed or not
+                            if (checkuser == false) { // email is not exists
+                                Boolean insert = DB.insertData(user, pass); // creating a user with email
                                 if (insert == true) {
                                     Toast.makeText(Signup.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
                                     startActivity(new Intent(Signup.this, Menu.class));
@@ -92,11 +91,8 @@ public class Signup extends AppCompatActivity {
                         }
                         }
                     }
-
-
-
         });
-        showNotification();
+        showNotification(); //Showing a welcome notification
     }
         //____________________For Firebase----------------------------//
 //                String strEmail = email.getText().toString();

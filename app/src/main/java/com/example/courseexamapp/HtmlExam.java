@@ -2,7 +2,12 @@ package com.example.courseexamapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -24,6 +29,9 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
     private CountDownTimer myTimer;
     private static int correctCount = 0;
     private BottomNavigationView myBottomNavigation;
+    private final String Ch_ID = "Code World";
+    private final int Noti_ID = 1;
+
 //Questions for HTML Exam and boolean whether option 1 is correct or not
     private final Question[] questionBank = new Question[]{
             new Question(R.string.q1, true),
@@ -66,10 +74,11 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
                 time1.setText("00:" + String.format("%02d", millisUntilFinished / 1000));
             }
 
-            @Override
+            @Override // on Timer finished
             public void onFinish() {
                 time1.setVisibility(View.INVISIBLE);
                 remtime1.setVisibility(View.INVISIBLE);
+                showNotification();
                 //When time is up but exam is not completed yet
                 if (index < questionBank.length) {
                     img.setImageResource(R.drawable.timeup);
@@ -82,7 +91,16 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
                         txtQu.setText("Study Well Next time\n Marks = " + marks);
                     }
                 }
-
+//Option 1 is selected for a question and checking whether it is correct
+                btnYes.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        checkAns(true);
+                        index++;
+                        updateQue();
+                    }
+                });
+//Option 2 is selected for a question and checking whether it is correct
                 btnNo.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -92,18 +110,9 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
                     }
                 });
 
-                btnYes.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        checkAns(true);
-                        index++;
-                        updateQue();
-                    }
-                });
-
                 //at exam  finished button names get changed
                 btnYes.setText("Try Again");
-//                Toast.makeText(getApplicationContext(), "Thank you for Attending Exam", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Thank you for Attending Exam", Toast.LENGTH_SHORT).show();
                 btnNo.setText("Home");
                 correctCount = 0; //resetting the marks at the end of exam
 
@@ -139,14 +148,13 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnNo:
-                checkAns(false);
+            case R.id.btnYes:
+                checkAns(true);
                 index++;
                 updateQue();
                 break;
-
-            case R.id.btnYes:
-                checkAns(true);
+            case R.id.btnNo:
+                checkAns(false);
                 index++;
                 updateQue();
                 break;
@@ -169,7 +177,7 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
             img.setImageResource(images[index]);
             btnYes.setText(option1[index]);
             btnNo.setText(option2[index]);
-        } else { //at exam, finished
+        } else { //at exam, finished Marks and Grade display
             int marks = correctCount * 100 / (questionBank.length);
             if (marks >= 80) {
                 img.setImageResource(R.drawable.success);
@@ -188,13 +196,13 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
                 txtQu.setText("Study Well Next time\n Marks = " + marks);
             }
 
-            //at exam  finished button names get changed
+            //at exam  finished button names get changed on the same activity
             btnYes.setText("Try Again");
             Toast.makeText(getApplicationContext(), "Thank you for Attending Exam", Toast.LENGTH_SHORT).show();
             btnNo.setText("Home");
+            showNotification();
 
-
-            //When exam finished try again button goes  again main screen
+            //When exam finished try again button goes  again exam screen
             btnYes.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -245,7 +253,7 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
             }
         }
     }
-
+    //----------------------------------------------------------------------------------------------------------
     private void cancelExam() {
         if (index < questionBank.length) { //At the Exam Time Multi tasking stopped
             Toast.makeText(getApplicationContext(), "Focus Missed", Toast.LENGTH_SHORT).show();
@@ -288,5 +296,31 @@ public class HtmlExam extends AppCompatActivity implements View.OnClickListener 
             }
         });
     }
+    //Regarding Notifications
+    private void showNotification(){
+        createNotificationChannel();
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), Ch_ID);
+        builder.setSmallIcon(R.drawable.chat);
+        builder.setContentTitle("Exam Completed");
+        builder.setContentText("Thank you for the efforts, Keep Studying");
+        builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
 
+        NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(getApplicationContext());
+        notificationManagerCompat.notify(Noti_ID,builder.build());
+    }
+
+    private void createNotificationChannel(){
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            String description = "Simple Notification";
+            String name = "Simple Noti";
+            int imp = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel notificationChannel = new NotificationChannel(Ch_ID,name,imp);
+            notificationChannel.setDescription(description);
+
+            NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+            if(notificationManager != null) {
+                notificationManager.createNotificationChannel(notificationChannel);
+            }
+        }
+    }
 }

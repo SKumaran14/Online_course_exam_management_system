@@ -54,8 +54,6 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
         });
     }
 
-
-
 //                if(firebaseAuth != null) {
 //                    firebaseAuth.signOut();
 

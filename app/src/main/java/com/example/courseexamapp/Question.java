@@ -4,7 +4,7 @@ public class Question {
     private int ansId;
     private boolean ans;
 
-    public Question(int ansId, boolean ans){
+    public Question(int ansId, boolean ans){ //Option 1 is correct or not boolean value
         this.ansId = ansId;
         this.ans = ans;
     }

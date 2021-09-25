@@ -18,10 +18,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+//An activity which requires a photograph to be taken to attend the exam
 public class ExamPhotoCapture extends AppCompatActivity {
     private static final int CAMERA_REQUEST = 1888;
     ImageView imageExam;
@@ -37,12 +37,12 @@ public class ExamPhotoCapture extends AppCompatActivity {
         imageExam = (ImageView) this.findViewById(R.id.imageExam);
         imageExam.setImageResource(R.drawable.photo);
         photoButton = this.findViewById(R.id.photoButton);
-        tlevel = findViewById(R.id.tlevel);
+        tlevel = findViewById(R.id.tlevel); //Battery level
         txtPhoto = findViewById(R.id.txtphoto);
         myBottomNavigation = findViewById(R.id.bottomNavigationView);
         bottomNavClick(); // To call the functions form bottom Navigation bar
 
-        //Same Alert Box created for both buttons to get consent about photo taking
+        //Alert Box created to get consent about photo taking
         AlertDialog alertDialog = new AlertDialog.Builder(ExamPhotoCapture.this).create();
         alertDialog.setTitle("Photo Verification");
         alertDialog.setMessage("Please Take a decent Photograph to confirm Identity");
@@ -51,7 +51,7 @@ public class ExamPhotoCapture extends AppCompatActivity {
         photoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //For agreeing to camera photo taking
+                //To get consent about photo taking
                 alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Agree", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

@@ -16,11 +16,13 @@ public class ExamMenu extends AppCompatActivity implements View.OnClickListener 
     private Button btnHtml;
     private Button btnCss;
     private BottomNavigationView myBottomNavigation;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exam_menu);
-        //Before attending Exam
+
+        //Before attending Exam terms and conditions are displayed through alert box
         AlertDialog alertDialog = new AlertDialog.Builder(ExamMenu.this).create();
         alertDialog.setTitle("Online Exam Conditions");
         alertDialog.setMessage("No Back Navigation\nNo App Switching\nTimed Exam \nRealtime Automated Marking\nPhoto Verification");

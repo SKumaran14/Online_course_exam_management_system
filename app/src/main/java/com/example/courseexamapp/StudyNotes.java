@@ -1,14 +1,16 @@
 package com.example.courseexamapp;
 
-public class StudyNotes {
+public class StudyNotes { //Study notes class
     private String id;
     private String chapter;
     private String notes;
 
-
-    public StudyNotes(String id, String chapter, String notes) {
+    public StudyNotes(){
+        //Default constructor
+    }
+    public StudyNotes(String id, String chapter, String notes) { //constructor
         this.id = id;
-        this.chapter = chapter;
+        this.chapter = chapter; //Title
         this.notes = notes;
     }
 

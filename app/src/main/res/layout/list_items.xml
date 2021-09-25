@@ -31,16 +31,20 @@
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:text="Title"
-                android:textSize="20sp"/>
+                android:textAlignment="center"
+                android:textColor="@color/purple_700"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Notes"
-                android:textSize="20sp"/>
+                android:textColor="@color/main"
+                android:textSize="20sp" />
 
 
         </LinearLayout>

@@ -19,7 +19,6 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 //actual question page which returns questions on the same page
@@ -30,6 +29,8 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
     private ImageView img;
     private int index = 0;
     private BottomNavigationView myBottomNavigation;
+    private final String Ch_ID = "Code World";
+    private final int Noti_ID = 1;
 
 
     //Question array for CSS Exam by checking option 1 correct or not
@@ -66,10 +67,10 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
         time2 = findViewById(R.id.txt_time2);
         remtime2 = findViewById(R.id.txt_remtime);
         myBottomNavigation = findViewById(R.id.bottomNavigationView);
-        bottomNavClick();
+        bottomNavClick(); //Calling Bottom navigation functions declared
     }
-    public void timer2(){
-        myTimer = new CountDownTimer(7000,1000) {
+    public void timer2(){ //Timer with 8 seconds
+        myTimer = new CountDownTimer(8000,1000) {
 
             @Override
             public void onTick(long millisUntilFinished) {
@@ -81,6 +82,7 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
             public void onFinish() {
                 time2.setVisibility(View.INVISIBLE);
                 remtime2.setVisibility(View.INVISIBLE);
+                showNotification(); // to show notification regarding exam completed
                 //When Time is up but exam was not completed
                 if(index<questionBank2.length) {
                     img.setImageResource(R.drawable.timeup);
@@ -93,19 +95,20 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
                         txtQu2.setText("Study Well Next time\n Marks = " + marks);
                     }
                 }
-                btnNo.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        checkAns(false);
-                        index++;
-                        updateQue();
-                    }
-                });
-
+                //When option 1 clicked and checking whether that is correct
                 btnYes.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         checkAns(true);
+                        index++;
+                        updateQue();
+                    }
+                });
+                //When option 2 clicked
+                btnNo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        checkAns(false);
                         index++;
                         updateQue();
                     }
@@ -200,8 +203,9 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
             }
             //at exam  finished button names get changed
             btnYes.setText("Try Again");
-//            Toast.makeText(getApplicationContext(),"Thank you for Attending Exam",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Thank you for Attending Exam",Toast.LENGTH_SHORT).show();
             btnNo.setText("Home");
+            showNotification();
 
             //When exam finished try again button goes  again main screen
             btnYes.setOnClickListener(new View.OnClickListener() {
@@ -231,7 +235,7 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
         }
     }
 
-    @Override
+    @Override // on Back button clicked
     public void onBackPressed() {
         if(index < questionBank2.length) { //At the Exam Time
             cancelExam();
@@ -240,7 +244,7 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
             startActivity(new Intent(CssExam.this,ExamPhotoCapture.class));
         }
     }
-
+//When multitasking button clicked
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
         if (!hasFocus) {
@@ -251,7 +255,7 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
             }
         }
     }
-
+//A method for call when back pressed or multitasking
     private void cancelExam(){
         if(index < questionBank2.length) { //At the Exam Time Multi tasking stopped
             Toast.makeText(getApplicationContext(), "Focus Missed", Toast.LENGTH_SHORT).show();
@@ -269,7 +273,7 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
                 public void run() {
                     Intent intent = new Intent(CssExam.this, ExamPhotoCapture.class);
                     startActivity(intent);
-                }
+                } // When back clicked , an error message displayed then returned to exam main page after 2 seconds
             }, 2000);
         }
     }
@@ -293,6 +297,34 @@ public class CssExam extends AppCompatActivity implements View.OnClickListener {
                 return true;
             }
         });
+    }
+
+    //Regarding Notifications
+    private void showNotification(){
+        createNotificationChannel();
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), Ch_ID);
+        builder.setSmallIcon(R.drawable.chat);
+        builder.setContentTitle("Exam Completed");
+        builder.setContentText("Thank you for the efforts, Keep Studying");
+        builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
+
+        NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(getApplicationContext());
+        notificationManagerCompat.notify(Noti_ID,builder.build());
+    }
+
+    private void createNotificationChannel(){
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            String description = "Simple Notification";
+            String name = "Simple Noti";
+            int imp = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel notificationChannel = new NotificationChannel(Ch_ID,name,imp);
+            notificationChannel.setDescription(description);
+
+            NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+            if(notificationManager != null) {
+                notificationManager.createNotificationChannel(notificationChannel);
+            }
+        }
     }
 }
 
