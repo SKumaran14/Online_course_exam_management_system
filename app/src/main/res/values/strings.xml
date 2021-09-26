@@ -284,4 +284,5 @@
     <string name="share_btn">Share</string>
     <string name="update_btn">Update</string>
     <string name="todo">TODO</string>
+    <string name="edit_text_file">File name</string>
 </resources>
