@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_artist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".commentview">
+
+    <TextView
+        android:id="@+id/Rate_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/type_cmnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rate_course"
+        android:hint="@string/type_cmnt"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type_cmnt">
+
+        <SeekBar
+            android:id="@+id/seekBarRating"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="5"></SeekBar>
+
+        <TextView
+            android:text="@string/in_r"
+            android:id="@+id/textViewRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_cmnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:text="@string/btn_cmnt" />
+
+    <TextView
+        android:id="@+id/comments_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_cmnt"
+        android:padding="16dp"
+        android:text="@string/comments_title"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comments_title"></ListView>
+
+</RelativeLayout>
