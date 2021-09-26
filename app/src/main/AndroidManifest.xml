@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CourseExamApp">
         <activity
+            android:name=".comment"
+            android:exported="true" />
+        <activity
             android:name=".alarm"
             android:exported="true" />
         <activity
@@ -76,15 +79,15 @@
         <activity
             android:name=".Posts"
             android:exported="true"
-            android:parentActivityName=".Forum"/>
+            android:parentActivityName=".Forum" />
         <activity
             android:name=".Forum_Main"
             android:exported="true"
-            android:parentActivityName=".CreateActivity"/>
+            android:parentActivityName=".CreateActivity" />
         <activity
             android:name=".UsersList"
             android:exported="true"
-            android:parentActivityName=".Forum_Main"/>
+            android:parentActivityName=".Forum_Main" />
         <activity
             android:name=".Assignment_Home"
             android:exported="true" />
@@ -100,7 +103,7 @@
         <activity
             android:name=".CreateActivity"
             android:exported="true"
-            android:parentActivityName=".Forum_Main"/>
+            android:parentActivityName=".Forum_Main" />
         <activity
             android:name=".StudyNotesStudent"
             android:exported="true" />
@@ -139,7 +142,7 @@
         </activity>
 
         <receiver android:name=".MyBroadcastReceiver">
-
+            
         </receiver>
     </application>
 

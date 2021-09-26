@@ -165,7 +165,7 @@
     <string name="admin_edit"> Edit Course</string>
     <string name="admin_delete"> Delete Course</string>
     <string name="admin_img_menu"> </string>
-    <string name="btn_add_cmnt"> ... </string>
+    <string name="btn_add_cmnt"> … </string>
     <!--    /course_content-->
     <string name="course_content_html"> HTML </string>
     <string name="content_head"> Tags For Headers </string>
@@ -240,6 +240,33 @@
 
     <string name="chk_search">search</string>
     <string name="chk_button">search</string>
+
+    <!--  //comment-->
+
+    <string name="add_r">Add</string>
+    <string name="in_r">1</string>
+    <string name="Ratings">Ratings</string>
+    <string name="enter_rating">Enter rating</string>
+
+
+    <string name="Rate_course">Rate Course</string>
+    <string name="Comments">Comments</string>
+    <string name="btn_cmnt">Add</string>
+    <string name="comments_title"> Reviews </string>
+    <string name="type_cmnt">Enter Comments</string>
+
+    <string name="text_cmnt">Add comments and Give as Review</string>
+
+    <string name="btnup">Update</string>
+    <string name="btndel">Delete</string>
+
+
+    <array name="courses">
+        <item>Python</item>
+        <item>HTML</item>
+        <item>C#</item>
+        <item>Java</item>
+    </array>
 
     <!--  Nithusha String resources-->
     <string name="forum_textView">Forum</string>
