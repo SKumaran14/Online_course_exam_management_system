@@ -13,6 +13,7 @@
         android:backgroundTint="#ffffff"
         android:text="@string/txt_chgpass"
         android:textColor="@color/main"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
