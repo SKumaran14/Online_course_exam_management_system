@@ -2,6 +2,11 @@ package com.example.courseexamapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -13,7 +18,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class course_sub_parts extends AppCompatActivity {
-    private Button tit;
+    private Button tit,alarm;
     private ImageView back;
     private Button nxt;
     private BottomNavigationView myBottomNavigation;
@@ -24,6 +29,7 @@ public class course_sub_parts extends AppCompatActivity {
         setContentView(R.layout.activity_course_sub_parts);
         tit = findViewById(R.id.html_cont1);
         nxt = findViewById(R.id.cont_next);
+        alarm = findViewById(R.id.alarm);
         back = findViewById(R.id.go_back);
         myBottomNavigation = findViewById(R.id.bottomNavigationView);
         bottomNavClick();
@@ -39,7 +45,7 @@ public class course_sub_parts extends AppCompatActivity {
         nxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(course_sub_parts.this, course_content.class);
+                Intent intent = new Intent(course_sub_parts.this, course_success.class);
                 startActivity(intent);
             }
         });
@@ -51,6 +57,15 @@ public class course_sub_parts extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        alarm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(course_sub_parts.this, alarm.class);
+                startActivity(intent);
+            }
+        });
+
     }
     //For Bottom Navigationbar Function
     public void bottomNavClick(){

@@ -108,7 +108,7 @@
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.359" />
+            app:layout_constraintVertical_bias="0.316" />
 
         <Button
             android:id="@+id/html_cont2"
@@ -122,10 +122,10 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.744" />
+            app:layout_constraintVertical_bias="0.704" />
 
         <Button
             android:id="@+id/btn_ur_enroll"
@@ -141,21 +141,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.884" />
-
-        <ScrollView
-            android:id="@+id/scroll"
-            android:layout_width="23dp"
-            android:layout_height="262dp"
-            android:background="#D3D3D3"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.204"
-            tools:ignore="SpeakableTextPresentCheck">
-
-        </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

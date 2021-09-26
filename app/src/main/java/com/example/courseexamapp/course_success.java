@@ -14,7 +14,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class course_success extends AppCompatActivity {
-    private Button  btn_att_exam;
+    private Button  btn_att_exam,btn_add_cmnt;
     private ImageView back;
     private BottomNavigationView myBottomNavigation;
     @Override
@@ -22,6 +22,7 @@ public class course_success extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course_success);
         btn_att_exam = findViewById(R.id.btn_exam);
+        btn_add_cmnt = findViewById(R.id. btn_add_cmnt);
         back = findViewById(R.id.go_back);
         myBottomNavigation = findViewById(R.id.bottomNavigationView);
         bottomNavClick();
@@ -41,6 +42,14 @@ public class course_success extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btn_add_cmnt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(course_success.this, your_courses.class);
+                startActivity(intent);
+            }
+        });
+
     }
     //For Bottom Navigationbar Function
     public void bottomNavClick(){

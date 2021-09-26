@@ -50,7 +50,7 @@
             android:name=".course_success"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".course_sub_parts"
             android:exported="true" />
         <activity
             android:name=".course_content"
@@ -132,7 +132,7 @@
             android:name=".ChangePassword"
             android:exported="true" />
         <activity
-            android:name=".course_sub_parts"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -142,7 +142,7 @@
         </activity>
 
         <receiver android:name=".MyBroadcastReceiver">
-            
+
         </receiver>
     </application>
 
