@@ -48,7 +48,6 @@ public class Signup extends AppCompatActivity {
         repassword = findViewById(R.id.srepassword);
         myBottomNavigation = findViewById(R.id.bottomNavigationView);
         DB = new DBHelper(this); // Database helper instance
-        bottomNavClick();
 
 //        firebaseAuth = FirebaseAuth.getInstance();
 //        progressDialog = new ProgressDialog(this);
@@ -150,27 +149,7 @@ public class Signup extends AppCompatActivity {
             }
         }
     }
-    //For Bottom Navigationbar Function
-    public void bottomNavClick(){
-        myBottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem){
 
-                switch (menuItem.getItemId()) {
-                    case R.id.courses:
-                        startActivity(new Intent(getApplicationContext(), your_courses.class));
-                        break;
-                    case R.id.menu:
-                        startActivity(new Intent(getApplicationContext(), Menu.class));
-                        break;
-                    case R.id.forum:
-                        startActivity(new Intent(getApplicationContext(), Forum_Main.class));
-                        break;
-                }
-                return true;
-            }
-        });
-    }
 }
 
 

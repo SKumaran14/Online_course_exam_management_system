@@ -33,7 +33,6 @@ public class Login extends AppCompatActivity {
         username = findViewById(R.id.lemail);
         password = findViewById(R.id.lpassword);
         DB = new DBHelper(this);
-        bottomNavClick();
 
 //        firebaseAuth = FirebaseAuth.getInstance();
 //        //When Login is ok
@@ -82,25 +81,5 @@ public class Login extends AppCompatActivity {
             }
         });
     }
-    //For Bottom Navigationbar Function
-    public void bottomNavClick(){
-        myBottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem){
 
-                switch (menuItem.getItemId()) {
-                    case R.id.courses:
-                        startActivity(new Intent(getApplicationContext(), your_courses.class));
-                        break;
-                    case R.id.menu:
-                        startActivity(new Intent(getApplicationContext(), Menu.class));
-                        break;
-                    case R.id.forum:
-                        startActivity(new Intent(getApplicationContext(), Forum_Main.class));
-                        break;
-                }
-                return true;
-            }
-        });
-    }
 }
