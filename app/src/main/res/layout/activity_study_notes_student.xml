@@ -53,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Name" />
 
     <Button
-        android:id="@+id/st_alarm"
+        android:id="@+id/button"
         android:layout_width="100dp"
         android:layout_height="55dp"
         android:layout_marginStart="94dp"

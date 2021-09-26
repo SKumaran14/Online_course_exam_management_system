@@ -4,43 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_add_assignment.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_assignment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_assignment_submit.xml" value="0.4" />
         <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_assignment_success.xml" value="0.25416666666666665" />
         <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_assignment_update_delete.xml" value="0.25416666666666665" />
         <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_main.xml" value="0.13020833333333334" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_add_assignment.xml" value="0.11820652173913043" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_adddata.xml" value="0.1" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_admin_course_sub_parts.xml" value="0.11820652173913043" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_admin_courses.xml" value="0.18" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_admin_edit_course_content.xml" value="0.11820652173913043" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_admin_login.xml" value="0.11820652173913043" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_alarm.xml" value="0.15" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_assignment_success.xml" value="0.1" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_comment.xml" value="0.12331081081081081" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_course_content.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_course_sub_parts.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_course_success.xml" value="0.16" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_create.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_delete_course.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_enrollment_confirmation.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_exam_menu.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_login.xml" value="0.11820652173913043" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_menu.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_not_found.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_posts.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_recyclerview.xml" value="0.11820652173913043" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_search_course.xml" value="0.18" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_search_result.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_users_list.xml" value="0.12331081081081081" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_your_course.xml" value="0.1" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/commentlist.xml" value="0.12331081081081081" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/commentview.xml" value="0.12331081081081081" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/dialog.xml" value="0.12331081081081081" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/list_items.xml" value="0.12331081081081081" />
+        <entry key="..\:/AndriodStudio/CourseExamApp/app/src/main/res/layout/activity_upload_file.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Jeyaseelan/AndroidStudioProjects/Online_course_exam_management_system/app/src/main/res/layout/activity_study_notes_student.xml" value="0.12135416666666667" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
