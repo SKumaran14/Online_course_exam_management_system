@@ -79,6 +79,7 @@ public class Signup extends AppCompatActivity {
                                 if (insert == true) {
                                     Toast.makeText(Signup.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
                                     startActivity(new Intent(Signup.this, Menu.class));
+                                    showNotification(); //Showing a welcome notification
                                 } else {
                                     Toast.makeText(Signup.this, "Registration Failed", Toast.LENGTH_SHORT).show();
                                 }
@@ -92,7 +93,7 @@ public class Signup extends AppCompatActivity {
                         }
                     }
         });
-        showNotification(); //Showing a welcome notification
+
     }
         //____________________For Firebase----------------------------//
 //                String strEmail = email.getText().toString();
