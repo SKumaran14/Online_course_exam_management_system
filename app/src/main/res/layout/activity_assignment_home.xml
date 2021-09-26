@@ -7,12 +7,10 @@
     tools:context=".Assignment_Home">
 
 
-
-
         <TextView
             android:id="@+id/textview_assignment"
-            android:layout_width="352dp"
-            android:layout_height="45dp"
+            android:layout_width="349dp"
+            android:layout_height="63dp"
             android:background="@color/Blue1"
             android:gravity="center"
             android:text="@string/textview_assignment"
@@ -20,38 +18,32 @@
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.023" />
-
 
         <ImageView
             android:id="@+id/image_java"
             android:layout_width="294dp"
             android:layout_height="178dp"
             android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
             android:background="#D3D3D3"
             android:contentDescription="@string/image_Java"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.564"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.16"
+            app:layout_constraintVertical_bias="0.198"
             app:srcCompat="@drawable/download" />
 
         <Button
             android:id="@+id/button_Java"
-            android:layout_width="310dp"
-            android:layout_height="75dp"
+            android:layout_width="295dp"
+            android:layout_height="47dp"
             android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
             android:background="#0000FF"
             android:gravity="center"
             android:text="@string/btn_java"
@@ -59,10 +51,10 @@
             app:backgroundTint="@color/Blue1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.574"
+            app:layout_constraintHorizontal_bias="0.51"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.407"
+            app:layout_constraintVertical_bias="0.421"
             tools:ignore="DuplicateSpeakableTextCheck" />
 
         <ImageView
@@ -86,12 +78,10 @@
 
         <Button
             android:id="@+id/button_html"
-            android:layout_width="310dp"
-            android:layout_height="75dp"
+            android:layout_width="296dp"
+            android:layout_height="52dp"
             android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
             android:background="#0000FF"
             android:gravity="center"
             android:text="@string/btn_html"
@@ -99,10 +89,10 @@
             app:backgroundTint="@color/Blue1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintHorizontal_bias="0.505"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.841" />
+            app:layout_constraintVertical_bias="0.812" />
 
         <androidx.constraintlayout.widget.Group
             android:id="@+id/group"
