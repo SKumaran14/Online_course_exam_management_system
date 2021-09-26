@@ -101,20 +101,12 @@
     <string name="text_view_file">File :</string>
     <string name="btn_create"> Create </string>
     <string name="textview_status2"> Pending </string>
-    <string name="textView_task"> Task </string>
-    <!--     <string name="textView_description"> Write a Java program to check if a given string is a permutation of another given string </string> -->
     <string name="textView_file_picker"> file Picker </string>
     <string name="textview_attachment"> Attachment : </string>
     <string name="btn_choose_file">Choose file </string>
     <string name="textView_save_file"> Save File as :</string>
     <string name="button_save_file"> Name </string>
     <string name="btn_upload"> Upload this file </string>
-    <string name="search1"> Search User </string>
-    <string name="textView_name1"> Kobigan </string>
-    <string name="textView_name2"> Gowthaman </string>
-    <string name="textView_name3"> Danushan </string>
-    <string name="textView_name4"> Kajansika </string>
-    <string name="textView_name5"> Jeyaseelan </string>
     <string name="btn_down"> Download </string>
     <string name="menu_course"> Courses </string>
     <string name="menu_dash"> Menu </string>
@@ -124,12 +116,10 @@
     <string name="Image_View_submit"> Submit </string>
     <string name="textView_submit1"> Congratulations </string>
     <string name="textView_submit2"> You successfully submitted the assignment!!!!!! </string>
-    <string name="assignment_id">Assignment id :</string>
     <string name="editText_id">enter id</string>
     <string name="editText_status"> Task </string>
     <string name="textView_name">Name : </string>
     <string name="editText_name"> viji.pdf </string>
-    <string name="btn_cancel">Cancel</string>
     <string name="btn_delete">Delete</string>
     <string name="btn_update">update</string>
     <!--    Kajansika String Resources-->
