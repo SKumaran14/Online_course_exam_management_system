@@ -5,29 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:clickable="true"
-        android:fadingEdge="horizontal"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:rotation="0"
-        android:rotationX="0"
+    <Button
+        android:id="@+id/admin_home"
+        android:layout_width="412dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/main"
+        android:freezesText="false"
+        android:text="@string/Admin_home"
         android:textAlignment="center"
-        app:backgroundTint="@color/main"
-        app:itemIconTint="@color/white"
-        app:itemTextAppearanceActive="@style/Widget.MaterialComponents.Toolbar"
-        app:itemTextAppearanceInactive="@style/MaterialAlertDialog.MaterialComponents.Title.Icon.CenterStacked"
-        app:itemTextColor="@color/white"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textIsSelectable="false"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:menu="@menu/bottomnav_bar" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/course_content_html"

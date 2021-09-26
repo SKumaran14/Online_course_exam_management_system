@@ -11,11 +11,10 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class admin_courses extends AppCompatActivity {
-    private Button btn_edit;
-    private Button btn_delete;
-    private Button admin_html;
+    private Button btn_edit,btn_delete,admin_html,admin_logout;
     private ImageView back;
     private BottomNavigationView myBottomNavigation;
 
@@ -23,6 +22,7 @@ public class admin_courses extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_courses);
+        admin_logout = findViewById(R.id.admin_logout);
         btn_edit = findViewById(R.id.admin_edit);
         btn_delete = findViewById(R.id.admin_delete);
         admin_html = findViewById(R.id.admin_menu_btn_html);
@@ -49,7 +49,7 @@ public class admin_courses extends AppCompatActivity {
         admin_html.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(admin_courses.this, course_sub_parts.class);
+                Intent intent = new Intent(admin_courses.this, admin_course_sub_parts.class);
                 startActivity(intent);
             }
         });
@@ -59,6 +59,17 @@ public class admin_courses extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(admin_courses.this, admin_courses.class);
                 startActivity(intent);
+            }
+        });
+        admin_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (v == admin_logout) {
+                    FirebaseAuth.getInstance().signOut();
+                    finish();
+                    startActivity(new Intent(admin_courses.this, admin_login.class));
+
+                }
             }
         });
     }

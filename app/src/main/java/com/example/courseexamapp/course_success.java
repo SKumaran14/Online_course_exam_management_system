@@ -29,7 +29,7 @@ public class course_success extends AppCompatActivity {
         btn_att_exam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(course_success.this, your_courses.class);
+                Intent intent = new Intent(course_success.this, Menu.class);
                 startActivity(intent);
             }
         });

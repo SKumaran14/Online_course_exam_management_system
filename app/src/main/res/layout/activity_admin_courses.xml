@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#D3D3D3"
     tools:context=".admin_courses">
 
     <TextView
@@ -114,6 +115,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.168" />
+
+
+    <Button
+        android:id="@+id/admin_logout"
+        android:layout_width="64dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#D3D3D3"
+        android:backgroundTintMode="src_over"
+        android:text="@string/admin_logout"
+        android:textColor="@color/Blue1"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"

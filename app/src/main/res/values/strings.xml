@@ -1,6 +1,6 @@
 <resources>
-<!--String names of Jeyaseelan-->
-        <string name="app_name">Code World</string>
+    <!--String names of Jeyaseelan-->
+    <string name="app_name">Code World</string>
     <string name="btn_login">LOGIN</string>
     <string name="btn_signup">SIGNUP</string>
     <string name="btn_next">NEXT</string>
@@ -210,6 +210,39 @@
     <string name="edit_sub">Edit</string>
     <string name="add_sub">Add</string>
     <string name="delete_sub">Delete</string>
+
+    <!--    /login-->
+    <string name="admin_username"> </string>
+    <string name="admin_pw"> </string>
+    <string name="admin_login"> Login </string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="log_in">LOG IN</string>
+
+    <!--  admin_view_Course,  Edit-->
+
+
+    <string name="course_name">Course Name</string>
+    <string name="duration">Duration</string>
+    <string name="update_course">Update</string>
+    <string name="update_title"> Update Course </string>
+    <string name="Admin_home"> … </string>
+    <string name="admin_logout">Log out</string>
+    <!--    /Add-->
+    <string name="ad_course"> Course Name </string>
+    <string name="add_duration"> Duration </string>
+    <string name="admin_add"> Add </string>
+    <string name="adding_course"> Add Course </string>
+    <string name="delete">delete</string>
+    <string name="edit">edit</string>
+
+    <string name="crs_name">Course Name</string>
+    <string name="course_image">courses</string>
+    <string name="search_data">Search Data</string>
+
+    <string name="chk_search">search</string>
+    <string name="chk_button">search</string>
+
     <!--  Nithusha String resources-->
     <string name="forum_textView">Forum</string>
     <string name="Add_post_btn">Add Post</string>

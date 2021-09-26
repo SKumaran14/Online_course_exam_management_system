@@ -94,7 +94,7 @@
             app:srcCompat="@drawable/amigos_working_from_home" />
 
         <Button
-            android:id="@+id/btn_ur_python"
+            android:id="@+id/html_cont1"
             android:layout_width="298dp"
             android:layout_height="88dp"
             android:backgroundTint="@color/main"
@@ -111,7 +111,7 @@
             app:layout_constraintVertical_bias="0.359" />
 
         <Button
-            android:id="@+id/btn_ur_html"
+            android:id="@+id/html_cont2"
             android:layout_width="298dp"
             android:layout_height="88dp"
             android:backgroundTint="@color/main"

@@ -22,7 +22,7 @@ public class course_sub_parts extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course_sub_parts);
-        tit = findViewById(R.id.btn_ur_python);
+        tit = findViewById(R.id.html_cont1);
         nxt = findViewById(R.id.cont_next);
         back = findViewById(R.id.go_back);
         myBottomNavigation = findViewById(R.id.bottomNavigationView);

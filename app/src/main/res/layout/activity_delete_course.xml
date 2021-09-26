@@ -19,19 +19,6 @@
         app:srcCompat="@drawable/remove" />
 
     <ImageView
-        android:id="@+id/img_del_al_html"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/del_html"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.194"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.865"
-        app:srcCompat="@drawable/remove" />
-
-    <ImageView
         android:id="@+id/img_del_al_py"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -115,21 +102,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.395"
         tools:ignore="DuplicateSpeakableTextCheck" />
-
-    <ImageView
-        android:id="@+id/imgdel_c"
-        android:layout_width="298dp"
-        android:layout_height="145dp"
-        android:background="#D3D3D3"
-        android:contentDescription="@string/del_c"
-        android:elevation="-10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.522"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/amigos_working_from_home" />
 
     <ImageView
         android:id="@+id/imgdel_python"

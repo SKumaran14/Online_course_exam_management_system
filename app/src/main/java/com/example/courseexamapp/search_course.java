@@ -31,7 +31,7 @@ public class search_course extends AppCompatActivity {
         btn_html.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(search_course.this, enrollment_confirmation.class);
+                Intent intent = new Intent(search_course.this, course_sub_parts.class);
                 startActivity(intent);
             }
         });
@@ -39,7 +39,7 @@ public class search_course extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(search_course.this, your_courses.class);
+                Intent intent = new Intent(search_course.this, Menu.class);
                 startActivity(intent);
             }
         });

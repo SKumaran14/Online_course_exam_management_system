@@ -21,7 +21,7 @@ public class your_courses extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_your_course);
 
-        ur_html = findViewById(R.id.btn_ur_python);
+        ur_html = findViewById(R.id.html_cont1);
         enroll_more = findViewById(R.id.btn_ur_enroll);
         back = findViewById(R.id.go_back);
         myBottomNavigation = findViewById(R.id.bottomNavigationView);

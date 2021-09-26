@@ -22,18 +22,17 @@ public class admin_course_sub_parts extends AppCompatActivity {
     private ImageView back;
     private ListView lv;
     private EditText search_sub;
-    private Button edit_sub,add_sub,cont_next,delete_sub;
+    private Button edit_sub,add_sub,cont_next,delete_sub,admin_home;
     ArrayList<String> Course_parts = new ArrayList<String>();
     ArrayAdapter myAdapter;
     Integer indexVal;
     String item;
-    private BottomNavigationView myBottomNavigation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_course_sub_parts);
-
+        admin_home= findViewById(R.id.admin_home);
         back = findViewById(R.id.go_back);
         edit_sub = findViewById(R.id.edit_sub);
         delete_sub = findViewById(R.id.delete_sub);
@@ -41,13 +40,13 @@ public class admin_course_sub_parts extends AppCompatActivity {
         cont_next = findViewById(R.id.cont_next);
         lv = findViewById(R.id.lv);
         search_sub = findViewById(R.id.serach_sub);
-        myBottomNavigation = findViewById(R.id.bottomNavigationView);
-        bottomNavClick();
+        admin_home= findViewById(R.id.admin_home);
+
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(admin_course_sub_parts.this, delete_course.class);
+                Intent intent = new Intent(admin_course_sub_parts.this, admin_courses.class);
                 startActivity(intent);
             }
         });
@@ -110,28 +109,39 @@ public class admin_course_sub_parts extends AppCompatActivity {
                 return true;
             }
         });
-    }
-    //For Bottom Navigationbar Function
-    public void bottomNavClick(){
-        myBottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+
+        admin_home.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem){
-
-                switch (menuItem.getItemId()) {
-                    case R.id.courses:
-                        startActivity(new Intent(getApplicationContext(), your_courses.class));
-                        break;
-                    case R.id.menu:
-                        startActivity(new Intent(getApplicationContext(), Menu.class));
-                        break;
-                    case R.id.forum:
-                        startActivity(new Intent(getApplicationContext(), Forum_Main.class));
-                        break;
-                }
-
-                return true;
-
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),admin_courses.class));
+                finish();
             }
         });
+
     }
-}
+
+
+//    //For Bottom Navigationbar Function
+//    public void bottomNavClick(){
+//        myBottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem){
+//
+//                switch (menuItem.getItemId()) {
+//                    case R.id.courses:
+//                        startActivity(new Intent(getApplicationContext(), your_courses.class));
+//                        break;
+//                    case R.id.menu:
+//                        startActivity(new Intent(getApplicationContext(), Menu.class));
+//                        break;
+//                    case R.id.forum:
+//                        startActivity(new Intent(getApplicationContext(), Forum_Main.class));
+//                        break;
+//                }
+//
+//                return true;
+//
+//            }
+//        });
+    }
