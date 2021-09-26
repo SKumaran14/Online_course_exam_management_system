@@ -68,7 +68,6 @@
                 android:layout_width="104dp"
                 android:layout_height="45dp"
                 android:hint="@string/edit_text_file"
-                android:text="Filename"
                 android:textColorHint="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

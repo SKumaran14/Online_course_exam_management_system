@@ -29,7 +29,7 @@ import java.util.Date;
 
 public class assignment_update_delete extends AppCompatActivity {
     private BottomNavigationView myBottomNavigation;
-    Button edit, delete, next;
+    Button edit, delete;
     String id, type;
     Uri imageuri = null;
     private static final int REQUEST_WRITE_PERMISSION = 786;
@@ -129,17 +129,6 @@ public class assignment_update_delete extends AppCompatActivity {
         });
 
 
-
-        //cancel indent
-        /*next = (Button)findViewById(R.id.btn_cancel);
-
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(assignment_update_delete.this, assignment_submit.class);
-                startActivity(intent);
-            }
-        });*/
     }
 
 
