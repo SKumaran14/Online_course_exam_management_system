@@ -22,7 +22,7 @@ public class admin_course_sub_parts extends AppCompatActivity {
     private ImageView back;
     private ListView lv;
     private EditText search_sub;
-    private Button edit_sub,add_sub,cont_next,delete_sub,admin_home;
+    private Button edit_sub, add_sub, cont_next, delete_sub, admin_home;
     ArrayList<String> Course_parts = new ArrayList<String>();
     ArrayAdapter myAdapter;
     Integer indexVal;
@@ -32,7 +32,7 @@ public class admin_course_sub_parts extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_course_sub_parts);
-        admin_home= findViewById(R.id.admin_home);
+        admin_home = findViewById(R.id.admin_home);
         back = findViewById(R.id.go_back);
         edit_sub = findViewById(R.id.edit_sub);
         delete_sub = findViewById(R.id.delete_sub);
@@ -40,7 +40,7 @@ public class admin_course_sub_parts extends AppCompatActivity {
         cont_next = findViewById(R.id.cont_next);
         lv = findViewById(R.id.lv);
         search_sub = findViewById(R.id.serach_sub);
-        admin_home= findViewById(R.id.admin_home);
+        admin_home = findViewById(R.id.admin_home);
 
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -59,7 +59,7 @@ public class admin_course_sub_parts extends AppCompatActivity {
         Course_parts.add("Formatting");
 
         myAdapter = new ArrayAdapter<String>(
-                this, android.R.layout.simple_list_item_1,Course_parts);
+                this, android.R.layout.simple_list_item_1, Course_parts);
         lv.setAdapter(myAdapter);
 
 
@@ -71,7 +71,7 @@ public class admin_course_sub_parts extends AppCompatActivity {
                 Course_parts.add(stringval);
                 myAdapter.notifyDataSetChanged();
                 search_sub.setText("");
-                Toast.makeText(admin_course_sub_parts.this, "Added Succesfully ",  Toast.LENGTH_SHORT).show();
+                Toast.makeText(admin_course_sub_parts.this, "Added Succesfully ", Toast.LENGTH_SHORT).show();
             }
         });
         //select item
@@ -81,7 +81,7 @@ public class admin_course_sub_parts extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 item = adapterView.getItemAtPosition(i).toString() + "has been selected";
                 indexVal = i;
-                Toast.makeText(admin_course_sub_parts.this,item,  Toast.LENGTH_SHORT).show();
+                Toast.makeText(admin_course_sub_parts.this, item, Toast.LENGTH_SHORT).show();
             }
         });
         //update
@@ -90,10 +90,10 @@ public class admin_course_sub_parts extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String stringval = search_sub.getText().toString();
-                Course_parts.set(indexVal,stringval);
+                Course_parts.set(indexVal, stringval);
                 myAdapter.notifyDataSetChanged();
                 search_sub.setText("");
-                Toast.makeText(admin_course_sub_parts.this, "Added Succesfully ",  Toast.LENGTH_SHORT).show();
+                Toast.makeText(admin_course_sub_parts.this, "Added Succesfully ", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -102,7 +102,7 @@ public class admin_course_sub_parts extends AppCompatActivity {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
                 item = adapterView.getItemAtPosition(i).toString() + "has been deleted";
-                Toast.makeText(admin_course_sub_parts.this, "Deleted Succesfully ",  Toast.LENGTH_SHORT).show();
+                Toast.makeText(admin_course_sub_parts.this, "Deleted Succesfully ", Toast.LENGTH_SHORT).show();
 
                 Course_parts.remove(i);
                 myAdapter.notifyDataSetChanged();
@@ -114,7 +114,7 @@ public class admin_course_sub_parts extends AppCompatActivity {
         admin_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),admin_courses.class));
+                startActivity(new Intent(getApplicationContext(), admin_courses.class));
                 finish();
             }
         });
@@ -122,26 +122,4 @@ public class admin_course_sub_parts extends AppCompatActivity {
     }
 
 
-//    //For Bottom Navigationbar Function
-//    public void bottomNavClick(){
-//        myBottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem){
-//
-//                switch (menuItem.getItemId()) {
-//                    case R.id.courses:
-//                        startActivity(new Intent(getApplicationContext(), your_courses.class));
-//                        break;
-//                    case R.id.menu:
-//                        startActivity(new Intent(getApplicationContext(), Menu.class));
-//                        break;
-//                    case R.id.forum:
-//                        startActivity(new Intent(getApplicationContext(), Forum_Main.class));
-//                        break;
-//                }
-//
-//                return true;
-//
-//            }
-//        });
-    }
+}
