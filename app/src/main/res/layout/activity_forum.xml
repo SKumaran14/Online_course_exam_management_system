@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/forum_textView"
-        android:layout_width="383dp"
-        android:layout_height="41dp"
+        android:layout_width="356dp"
+        android:layout_height="66dp"
         android:background="@color/main"
         android:gravity="center"
         android:text="@string/forum_textView"
@@ -26,8 +26,8 @@
 
     <TextView
         android:id="@+id/background_textview"
-        android:layout_width="280dp"
-        android:layout_height="303dp"
+        android:layout_width="340dp"
+        android:layout_height="489dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:background="@drawable/background_border"
@@ -36,9 +36,10 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -63,11 +64,13 @@
         app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/bottomnav_bar" />
 
+
     <TextView
         android:id="@+id/circle_textView"
-        android:layout_width="110dp"
-        android:layout_height="104dp"
+        android:layout_width="117dp"
+        android:layout_height="122dp"
         android:background="@drawable/circle"
+        android:backgroundTint="#1086E4"
         android:gravity="center"
         android:text="@string/circle_textView"
         android:textColor="@color/white"
@@ -76,70 +79,69 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.23" />
+        app:layout_constraintVertical_bias="0.241" />
 
     <Button
         android:id="@+id/circle_btn"
-        android:layout_width="88dp"
-        android:layout_height="71dp"
+        android:layout_width="98dp"
+        android:layout_height="92dp"
         android:background="@drawable/circle"
         android:gravity="center"
         android:text="@string/circle_btn"
         android:textColor="@color/white"
-        android:textSize="12sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:backgroundTint="@color/main"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.246" />
-
+        app:layout_constraintVertical_bias="0.248" />
 
     <Button
         android:id="@+id/circle_btn2"
-        android:layout_width="74dp"
-        android:layout_height="64dp"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
         android:background="@drawable/circle"
         android:gravity="center"
         android:text="@string/circle_btn2"
         android:textColor="@color/white"
-        android:textSize="12sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:backgroundTint="@color/main"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395" />
+        app:layout_constraintVertical_bias="0.386" />
 
     <Button
         android:id="@+id/Rated_post_btn"
-        android:layout_width="77dp"
-        android:layout_height="110dp"
+        android:layout_width="86dp"
+        android:layout_height="117dp"
         android:background="@drawable/rounded_corner_border"
         android:gravity="center"
         android:text="@string/Rated_post_btn"
         android:textColor="@color/white"
-        android:textSize="12sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:backgroundTint="@color/main"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.288" />
+        app:layout_constraintVertical_bias="0.286" />
 
     <TextView
         android:id="@+id/natalia_post_textView2"
-        android:layout_width="230dp"
-        android:layout_height="60dp"
+        android:layout_width="234dp"
+        android:layout_height="72dp"
         android:background="@drawable/rounded_corner_border"
         android:gravity="center"
         android:text="@string/natalia_post_textView2"
@@ -148,15 +150,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintHorizontal_bias="0.629"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.551" />
 
     <TextView
         android:id="@+id/natalia_lecture_textView2"
-        android:layout_width="234dp"
-        android:layout_height="78dp"
+        android:layout_width="265dp"
+        android:layout_height="118dp"
         android:background="@drawable/rounded_corner_border"
         android:gravity="center"
         android:text="@string/natalia_lecture_textView2"
@@ -165,10 +167,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintHorizontal_bias="0.343"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.661" />
+        app:layout_constraintVertical_bias="0.76" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

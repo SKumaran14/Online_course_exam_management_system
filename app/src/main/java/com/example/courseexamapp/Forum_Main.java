@@ -23,10 +23,14 @@ public class Forum_Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forum_main);
 
+        Toast.makeText(Forum_Main.this, "firebase connection success",
+                Toast.LENGTH_LONG).show();
 
-        Button mButton = findViewById(R.id.Add_post_btn);
+
         myBottomNavigation = findViewById(R.id.bottomNavigationView);
         bottomNavClick();
+
+        Button mButton = findViewById(R.id.Add_post_btn);
         mButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {

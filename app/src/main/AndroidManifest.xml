@@ -72,13 +72,16 @@
             android:exported="true" />
         <activity
             android:name=".Posts"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".Forum"/>
         <activity
             android:name=".Forum_Main"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".CreateActivity"/>
         <activity
             android:name=".UsersList"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".Forum_Main"/>
         <activity
             android:name=".Assignment_Home"
             android:exported="true" />
@@ -93,7 +96,8 @@
             android:exported="true" />
         <activity
             android:name=".CreateActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".Forum_Main"/>
         <activity
             android:name=".StudyNotesStudent"
             android:exported="true" />

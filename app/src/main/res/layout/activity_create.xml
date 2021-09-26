@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/create_post_textView"
-        android:layout_width="383dp"
-        android:layout_height="41dp"
+        android:layout_width="362dp"
+        android:layout_height="66dp"
         android:background="@color/main"
         android:gravity="center"
 
@@ -27,8 +27,8 @@
 
     <TextView
         android:id="@+id/background_textview"
-        android:layout_width="278dp"
-        android:layout_height="312dp"
+        android:layout_width="351dp"
+        android:layout_height="492dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:background="@drawable/background_border"
@@ -37,10 +37,10 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.417" />
+        app:layout_constraintVertical_bias="0.566" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -62,13 +62,13 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.997"
         app:menu="@menu/bottomnav_bar" />
 
     <TextView
         android:id="@+id/title_textview"
-        android:layout_width="229dp"
-        android:layout_height="57dp"
+        android:layout_width="290dp"
+        android:layout_height="95dp"
         android:layout_centerInParent="true"
         android:background="@drawable/rounded_corner_border"
         android:text="@string/title_textview"
@@ -77,9 +77,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.286" />
+        app:layout_constraintVertical_bias="0.261" />
 
     <EditText
         android:id="@+id/titleName"
@@ -93,15 +94,15 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.288" />
+        app:layout_constraintVertical_bias="0.277" />
 
     <TextView
         android:id="@+id/content_textview"
-        android:layout_width="229dp"
-        android:layout_height="82dp"
+        android:layout_width="290dp"
+        android:layout_height="146dp"
         android:layout_centerInParent="true"
         android:background="@drawable/rounded_corner_border"
         android:text="@string/content_textview"
@@ -110,9 +111,11 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.428" />
+        app:layout_constraintVertical_bias="0.499" />
+
 
     <EditText
         android:id="@+id/content"
@@ -126,75 +129,59 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.423" />
-
-    <TextView
-        android:id="@+id/Attach_file_textview"
-        android:layout_width="229dp"
-        android:layout_height="60dp"
-        android:layout_centerInParent="true"
-        android:background="@drawable/rounded_corner_border"
-
-        android:text="@string/Attach_file_textview"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.585" />
-
-    <Button
-        android:id="@+id/file"
-        android:layout_width="114dp"
-        android:layout_height="35dp"
-        android:backgroundTint="@color/white"
-        android:ems="10"
-        android:text="@string/file"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.663"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.579" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/share_btn"
-        android:layout_width="103dp"
-        android:layout_height="52dp"
+        android:layout_width="96dp"
+        android:layout_height="71dp"
 
         android:text="@string/share_btn"
         android:textColor="@color/white"
-        android:textSize="16sp"
+        android:textSize="14sp"
+        android:textStyle="italic"
         app:backgroundTint="@color/main"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.759" />
 
     <Button
         android:id="@+id/update_btn"
-        android:layout_width="103dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="52dp"
+        android:layout_width="96dp"
+        android:layout_height="71dp"
         android:text="@string/update_btn"
         android:textColor="@color/white"
-        android:textSize="12sp"
+        android:textSize="14sp"
+        android:textStyle="italic"
         app:backgroundTint="@color/main"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toEndOf="@+id/share_btn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799" />
+        app:layout_constraintVertical_bias="0.759" />
+
+    <Button
+        android:id="@+id/delete_btn"
+        android:layout_width="96dp"
+        android:layout_height="71dp"
+
+        android:text="@string/delete_btn"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:backgroundTint="@color/main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759" />
 
     <!--    <ImageView-->
 <!--        android:id="@+id/imageView"-->

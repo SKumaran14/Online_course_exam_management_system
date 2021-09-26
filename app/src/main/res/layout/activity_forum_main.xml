@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/forum_textView"
-        android:layout_width="383dp"
-        android:layout_height="41dp"
+        android:layout_width="336dp"
+        android:layout_height="57dp"
         android:background="@color/main"
         android:gravity="center"
         android:text="@string/forum_textView"
@@ -26,8 +26,8 @@
 
     <TextView
         android:id="@+id/background_textview"
-        android:layout_width="280dp"
-        android:layout_height="303dp"
+        android:layout_width="323dp"
+        android:layout_height="474dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:background="@drawable/background_border"
@@ -36,9 +36,10 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -63,70 +64,73 @@
         app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/bottomnav_bar" />
 
+
     <Button
 
         android:id="@+id/Add_post_btn"
-        android:layout_width="100dp"
-        android:layout_height="72dp"
+        android:layout_width="94dp"
+        android:layout_height="70dp"
         android:text="@string/Add_post_btn"
         android:textColor="@color/white"
-        android:textSize="16sp"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:backgroundTint="@color/main"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157" />
-
+        app:layout_constraintVertical_bias="0.206" />
 
     <Button
         android:id="@+id/edit_post_btn"
-        android:layout_width="100dp"
-        android:layout_height="72dp"
+        android:layout_width="94dp"
+        android:layout_height="70dp"
 
         android:text="@string/edit_post_btn"
-        android:textSize="16sp"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:backgroundTint="@color/main"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157" />
+        app:layout_constraintVertical_bias="0.206" />
 
     <Button
         android:id="@+id/delete_post_btn"
-        android:layout_width="100dp"
-        android:layout_height="72dp"
+        android:layout_width="94dp"
+        android:layout_height="70dp"
 
         android:text="@string/delete_post_btn"
-        android:textSize="16sp"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:backgroundTint="@color/main"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintHorizontal_bias="0.854"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157" />
+        app:layout_constraintVertical_bias="0.206" />
 
     <ImageView
         android:id="@+id/imageview_chat_forum"
-        android:layout_width="48dp"
-        android:layout_height="43dp"
+        android:layout_width="52dp"
+        android:layout_height="60dp"
         android:contentDescription="@string/imageview_chat_forum"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.399"
+        app:layout_constraintVertical_bias="0.377"
         app:srcCompat="@drawable/account" />
 
     <TextView
         android:id="@+id/chat_textview_forum"
-        android:layout_width="229dp"
-        android:layout_height="57dp"
+        android:layout_width="223dp"
+        android:layout_height="78dp"
         android:layout_centerInParent="true"
         android:background="@drawable/rounded_corner_border"
         android:text="@string/chat_textview_forum"
@@ -135,28 +139,28 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintHorizontal_bias="0.675"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.387" />
 
     <ImageView
         android:id="@+id/imageView2_chat_forum"
-        android:layout_width="48dp"
-        android:layout_height="43dp"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
         android:contentDescription="@string/imageView2_chat_forum"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.549"
+        app:layout_constraintVertical_bias="0.554"
         app:srcCompat="@drawable/account" />
 
     <TextView
         android:id="@+id/chat_lec_textview_forum"
-        android:layout_width="229dp"
-        android:layout_height="57dp"
+        android:layout_width="226dp"
+        android:layout_height="80dp"
         android:layout_centerInParent="true"
         android:background="@drawable/rounded_corner_border"
         android:text="@string/chat_lec_textview_forum"
@@ -165,28 +169,28 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.54" />
+        app:layout_constraintVertical_bias="0.56" />
 
     <ImageView
         android:id="@+id/imageView3_lecture_forum"
-        android:layout_width="48dp"
-        android:layout_height="43dp"
+        android:layout_width="47dp"
+        android:layout_height="51dp"
         android:contentDescription="@string/imageView3_lecture_forum"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintHorizontal_bias="0.164"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.699"
+        app:layout_constraintVertical_bias="0.755"
         app:srcCompat="@drawable/account" />
 
     <TextView
         android:id="@+id/chat_textView2_forum"
-        android:layout_width="228dp"
-        android:layout_height="74dp"
+        android:layout_width="226dp"
+        android:layout_height="93dp"
         android:layout_centerInParent="true"
         android:background="@drawable/rounded_corner_border"
         android:gravity="center"
@@ -196,10 +200,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintHorizontal_bias="0.677"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.674" />
+        app:layout_constraintVertical_bias="0.771" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

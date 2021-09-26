@@ -23,6 +23,7 @@ public class Forum extends AppCompatActivity {
 //        getSupportActionBar().setTitle("Code World");
 //        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
+
         Button mButton = findViewById(R.id.circle_btn);
         myBottomNavigation = findViewById(R.id.bottomNavigationView);
         bottomNavClick();
@@ -75,4 +76,3 @@ public class Forum extends AppCompatActivity {
         });
     }
 }
-

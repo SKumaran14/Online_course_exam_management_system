@@ -9,8 +9,8 @@
 
         <TextView
             android:id="@+id/post_textView"
-            android:layout_width="383dp"
-            android:layout_height="41dp"
+            android:layout_width="365dp"
+            android:layout_height="72dp"
             android:background="@color/main"
             android:gravity="center"
             android:text="@string/post_textView"
@@ -28,8 +28,8 @@
 
         <TextView
             android:id="@+id/post_background_textview"
-            android:layout_width="280dp"
-            android:layout_height="303dp"
+            android:layout_width="365dp"
+            android:layout_height="487dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:background="@drawable/background_border"
@@ -38,9 +38,9 @@
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.488"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.549" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
@@ -67,26 +67,26 @@
 
         <ImageView
             android:id="@+id/imageview_post"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
+            android:layout_width="70dp"
+            android:layout_height="67dp"
             android:contentDescription="@string/imageview_chat_forum"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintHorizontal_bias="0.093"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.248"
+            app:layout_constraintVertical_bias="0.245"
             app:srcCompat="@drawable/account" />
 
         <TextView
             android:id="@+id/post_textview"
-            android:layout_width="229dp"
-            android:layout_height="57dp"
+            android:layout_width="226dp"
+            android:layout_height="82dp"
             android:layout_centerInParent="true"
             android:background="@drawable/rounded_corner_border"
             android:text="@string/chat_textview_forum"
             android:textColor="@color/black"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -97,26 +97,26 @@
 
         <ImageView
             android:id="@+id/imageView2_post"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
+            android:layout_width="78dp"
+            android:layout_height="67dp"
             android:contentDescription="@string/imageView2_chat_forum"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.934"
+            app:layout_constraintHorizontal_bias="0.93"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.452"
+            app:layout_constraintVertical_bias="0.445"
             app:srcCompat="@drawable/account" />
 
         <TextView
             android:id="@+id/chat_lec_textview_post"
-            android:layout_width="229dp"
-            android:layout_height="57dp"
+            android:layout_width="251dp"
+            android:layout_height="71dp"
             android:layout_centerInParent="true"
             android:background="@drawable/rounded_corner_border"
             android:text="@string/chat_lec_textview_forum"
             android:textColor="@color/black"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -127,34 +127,34 @@
 
         <ImageView
             android:id="@+id/imageView3_post"
-            android:layout_width="43dp"
-            android:layout_height="43dp"
+            android:layout_width="78dp"
+            android:layout_height="67dp"
             android:contentDescription="@string/imageView3_lecture_forum"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintHorizontal_bias="0.072"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.655"
+            app:layout_constraintVertical_bias="0.686"
             app:srcCompat="@drawable/account" />
 
         <TextView
             android:id="@+id/chat_textView2_post"
-            android:layout_width="228dp"
-            android:layout_height="74dp"
+            android:layout_width="230dp"
+            android:layout_height="108dp"
             android:layout_centerInParent="true"
             android:background="@drawable/rounded_corner_border"
             android:gravity="center"
             android:text="@string/chat_textView2_forum"
             android:textColor="@color/black"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.633"
+            app:layout_constraintHorizontal_bias="0.624"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.651" />
+            app:layout_constraintVertical_bias="0.695" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

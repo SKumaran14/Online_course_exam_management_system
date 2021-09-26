@@ -70,7 +70,7 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
                 startActivity(new Intent(Menu.this, Assignment_Home.class));
                 break;
             case R.id.menu_forum:
-                startActivity(new Intent(Menu.this, Forum_Main.class));
+                startActivity(new Intent(Menu.this, Forum.class));
                 break;
         }
     }
