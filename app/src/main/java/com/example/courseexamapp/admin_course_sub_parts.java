@@ -22,7 +22,7 @@ public class admin_course_sub_parts extends AppCompatActivity {
     private ImageView back;
     private ListView lv;
     private EditText search_sub;
-    private Button edit_sub, add_sub, cont_next, delete_sub, admin_home;
+    private Button edit_sub, add_sub, cont_next, admin_home;
     ArrayList<String> Course_parts = new ArrayList<String>();
     ArrayAdapter myAdapter;
     Integer indexVal;
@@ -35,7 +35,6 @@ public class admin_course_sub_parts extends AppCompatActivity {
         admin_home = findViewById(R.id.admin_home);
         back = findViewById(R.id.go_back);
         edit_sub = findViewById(R.id.edit_sub);
-        delete_sub = findViewById(R.id.delete_sub);
         add_sub = findViewById(R.id.add_sub);
         cont_next = findViewById(R.id.cont_next);
         lv = findViewById(R.id.lv);

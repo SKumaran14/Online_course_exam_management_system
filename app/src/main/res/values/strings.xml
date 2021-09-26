@@ -145,7 +145,7 @@
     <string name="btn_ur_python">Python</string>
     <string name="btn_ur_csharp">C#</string>
     <string name="btn_ur_html">HTML</string>
-    <string name="btn_ur_enroll">Enroll More</string>
+    <string name="btn_ur_enroll"> More</string>
     <!--    /search result-->
     <string name="search_html">HTML</string>
     <string name="img_src_rst_html"> </string>
@@ -165,6 +165,7 @@
     <string name="admin_edit"> Edit Course</string>
     <string name="admin_delete"> Delete Course</string>
     <string name="admin_img_menu"> </string>
+    <string name="btn_add_cmnt"> ... </string>
     <!--    /course_content-->
     <string name="course_content_html"> HTML </string>
     <string name="content_head"> Tags For Headers </string>
@@ -190,6 +191,13 @@
     <string name="html_cont4"> Lists </string>
     <string name="html_cont5"> Formatting </string>
     <string name="cont_next"> Next </string>
+    <string name="st_alarm"> start </string>
+    <string name="input_time"> Enter Time </string>
+    <string name="input_time1"> Enter Time </string>
+    <string name="alarm"> Alarm </string>
+    <string name="summary"> Set Time To Summarize By Yourself, Start with a Simple Calculation :)  , Time + Time = Your Total Study Time!! </string>
+
+
     <!--    /Nav_bar-->
     <string name="menuk">Menu</string>
     <string name="forum">Forum</string>

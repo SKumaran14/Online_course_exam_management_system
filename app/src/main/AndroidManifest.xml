@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CourseExamApp">
         <activity
+            android:name=".alarm"
+            android:exported="true" />
+        <activity
             android:name=".admin_login"
             android:exported="true" />
         <activity
@@ -44,7 +47,7 @@
             android:name=".course_success"
             android:exported="true" />
         <activity
-            android:name=".course_sub_parts"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".course_content"
@@ -126,7 +129,7 @@
             android:name=".ChangePassword"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".course_sub_parts"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -134,6 +137,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver android:name=".MyBroadcastReceiver">
+
+        </receiver>
     </application>
 
 </manifest>

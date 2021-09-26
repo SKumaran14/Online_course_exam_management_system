@@ -83,7 +83,7 @@
         app:layout_constraintHorizontal_bias="0.812"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.894" />
+        app:layout_constraintVertical_bias="0.881" />
 
     <Button
         android:id="@+id/admin_course_content_save"
@@ -96,10 +96,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.894"
+        app:layout_constraintVertical_bias="0.882"
         tools:ignore="UsingOnClickInXml" />
 
     <TextView
@@ -133,8 +133,8 @@
 
     <EditText
         android:id="@+id/admin_course_content"
-        android:layout_width="360dp"
-        android:layout_height="140dp"
+        android:layout_width="320dp"
+        android:layout_height="127dp"
         android:ems="10"
         android:hint="@string/admin_course_content"
         android:importantForAutofill="no"
@@ -150,8 +150,8 @@
 
     <EditText
         android:id="@+id/admin_course_content1"
-        android:layout_width="360dp"
-        android:layout_height="140dp"
+        android:layout_width="320dp"
+        android:layout_height="133dp"
         android:ems="10"
         android:hint="@string/admin_course_content1"
         android:importantForAutofill="no"
@@ -159,20 +159,20 @@
         android:text="@string/admin_course_content1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintHorizontal_bias="0.417"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587" />
+        app:layout_constraintVertical_bias="0.557" />
 
     <TextView
         android:id="@+id/Edited_text"
-        android:layout_width="358dp"
-        android:layout_height="93dp"
+        android:layout_width="325dp"
+        android:layout_height="107dp"
         android:text="@string/Edited_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.788" />
+        app:layout_constraintVertical_bias="0.749" />
 </androidx.constraintlayout.widget.ConstraintLayout>

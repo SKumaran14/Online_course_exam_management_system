@@ -49,7 +49,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/course_content_html"
-        app:layout_constraintVertical_bias="0.389"
+        app:layout_constraintVertical_bias="0.469"
         app:srcCompat="@drawable/amigos_working_from_home" />
 
     <ImageView
@@ -64,7 +64,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/course_content_html"
-        app:layout_constraintVertical_bias="0.881"
+        app:layout_constraintVertical_bias="0.915"
         app:srcCompat="@drawable/amigos_working_from_home" />
 
     <Button
@@ -82,7 +82,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.646" />
+        app:layout_constraintVertical_bias="0.667" />
 
     <Button
         android:id="@+id/admin_delete"
@@ -100,10 +100,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.267" />
 
+
     <Button
         android:id="@+id/admin_edit"
-        android:layout_width="160dp"
-        android:layout_height="50dp"
+        android:layout_width="167dp"
+        android:layout_height="79dp"
         android:backgroundTint="@color/main"
         android:text="@string/admin_edit"
         android:textAlignment="center"
@@ -111,11 +112,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.168" />
-
+        app:layout_constraintVertical_bias="0.148" />
 
     <Button
         android:id="@+id/admin_logout"
